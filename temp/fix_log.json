@@ -1,0 +1,734 @@
+[
+  {
+    "id": "p2",
+    "old": "thumbs/μ's/冬季校服系列（冬制服）/东条希_40cm（L）_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\东条希_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p4",
+    "old": "thumbs/μ's/冬季校服系列（冬制服）/东条希_16cm（S）_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\东条希_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p6",
+    "old": "thumbs/μ's/冬季校服系列（冬制服）/东条希_テラジャンボ_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\东条希_テラジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p9",
+    "old": "thumbs/μ's/冬季校服系列（冬制服）/南小鸟_40cm（L）_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\南小鸟_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p10",
+    "old": "thumbs/μ's/冬季校服系列（冬制服）/南小鸟_16cm（S）_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\南小鸟_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p12",
+    "old": "thumbs/μ's/冬季校服系列（冬制服）/南小鸟_テラジャンボ_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\南小鸟_テラジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p26",
+    "old": "thumbs/μ's/ラブライブ!/南小鸟_16cm（S）_2.webp",
+    "new": "thumbs\\μ's\\ラブライブ!\\南小鸟_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p36",
+    "old": "thumbs/μ's/Snow halation/园田海未_16cm（S）_2.webp",
+    "new": "thumbs\\μ's\\冬季校服系列（冬制服）\\园田海未_40cm（L）.webp",
+    "reason": "fuzzy match"
+  },
+  {
+    "id": "p40",
+    "old": "thumbs/μ's/Snow halation/矢泽妮可_16cm（S）_2.webp",
+    "new": "thumbs\\μ's\\Snow halation\\矢泽妮可_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p42",
+    "old": "thumbs/μ's/Snow halation/矢泽妮可_40cm（L）_2.webp",
+    "new": "thumbs\\μ's\\Snow halation\\矢泽妮可_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p46",
+    "old": "thumbs/μ's/Snow halation/西木野真姬_16cm（S）_2.webp",
+    "new": "thumbs\\μ's\\Snow halation\\西木野真姬_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p48",
+    "old": "thumbs/μ's/Snow halation/西木野真姬_40cm（L）_2.webp",
+    "new": "thumbs\\μ's\\Snow halation\\西木野真姬_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p52",
+    "old": "thumbs/μ's/僕たちはひとつの光/园田海未_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\僕たちはひとつの光\\园田海未_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p56",
+    "old": "thumbs/μ's/僕たちはひとつの光/西木野真姬_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\僕たちはひとつの光\\西木野真姬_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p67",
+    "old": "thumbs/μ's/A song for You！You？You！！/东条希_50cm（LL）_2.webp",
+    "new": "thumbs\\μ's\\A song for You！You？You！！\\东条希_50cm（LL）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p74",
+    "old": "thumbs/μ's/A song for You！You？You！！/西木野真姬_50cm（LL）_2.webp",
+    "new": "thumbs\\μ's\\A song for You！You？You！！\\西木野真姬_50cm（LL）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p76",
+    "old": "thumbs/μ's/Happy Maker/东条希_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\Happy Maker\\东条希_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p78",
+    "old": "thumbs/μ's/Happy Maker/南小鸟_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\Happy Maker\\南小鸟_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p82",
+    "old": "thumbs/μ's/Happy Maker/西木野真姬_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\Happy Maker\\西木野真姬_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p84",
+    "old": "thumbs/μ's/No Brand Girls/东条希_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\No Brand Girls\\东条希_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p87",
+    "old": "thumbs/μ's/No Brand Girls/小泉花阳_10cm（SS）_2.webp",
+    "new": "thumbs\\μ's\\No Brand Girls\\小泉花阳_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p95",
+    "old": "thumbs/μ's/感谢祭2016（睡衣）/南小鸟_30cm（M）_2.webp",
+    "new": "thumbs\\μ's\\感谢祭2016（睡衣）\\南小鸟_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p116",
+    "old": "thumbs/μ's/All Stars/绚濑绘里_30cm（M）_2.webp",
+    "new": "thumbs\\μ's\\All Stars\\绚濑绘里_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p121",
+    "old": "thumbs/Aqours/君のこころは輝いてるかい/松浦果南_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\君のこころは輝いてるかい\\松浦果南_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p126",
+    "old": "thumbs/Aqours/君のこころは輝いてるかい/黑泽露比_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\君のこころは輝いてるかい\\黑泽露比_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p138",
+    "old": "thumbs/Aqours/冬季校服系列（冬制服）/松浦果南_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\冬季校服系列（冬制服）\\松浦果南_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p140",
+    "old": "thumbs/Aqours/冬季校服系列（冬制服）/樱内梨子_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\冬季校服系列（冬制服）\\樱内梨子_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p144",
+    "old": "thumbs/Aqours/冬季校服系列（冬制服）/津岛善子_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\冬季校服系列（冬制服）\\津岛善子_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p152",
+    "old": "thumbs/Aqours/冬季校服系列（冬制服）/鹿角圣良_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\冬季校服系列（冬制服）\\鹿角圣良_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p161",
+    "old": "thumbs/Aqours/smile smile ship Start!/国木田花丸_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\smile smile ship Start!\\国木田花丸_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p165",
+    "old": "thumbs/Aqours/smile smile ship Start!/樱内梨子_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\smile smile ship Start!\\樱内梨子_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p168",
+    "old": "thumbs/Aqours/smile smile ship Start!/黑泽黛雅_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\smile smile ship Start!\\黑泽黛雅_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p177",
+    "old": "thumbs/Aqours/Awaken the power/渡边曜_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\Awaken the power\\渡边曜_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p180",
+    "old": "thumbs/Aqours/Awaken the power/黑泽露比_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\Awaken the power\\黑泽露比_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p187",
+    "old": "thumbs/Aqours/私服/国木田花丸_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\私服\\国木田花丸_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p198",
+    "old": "thumbs/Aqours/未熟DREAMER/津岛善子_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\未熟DREAMER\\津岛善子_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p203",
+    "old": "thumbs/Aqours/未熟DREAMER/黑泽黛雅_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\未熟DREAMER\\黑泽黛雅_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p210",
+    "old": "thumbs/Aqours/青空jumping Heart/黑泽露比_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\青空jumping Heart\\黑泽露比_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p212",
+    "old": "thumbs/Aqours/青空jumping Heart/黑泽黛雅_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\青空jumping Heart\\黑泽黛雅_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p224",
+    "old": "thumbs/Aqours/水族馆（ボーダーシャツ）/樱内梨子_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\水族馆（ボーダーシャツ）\\樱内梨子_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p230",
+    "old": "thumbs/Aqours/水族馆（ボーダーシャツ）/黑泽黛雅_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\水族馆（ボーダーシャツ）\\黑泽黛雅_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p233",
+    "old": "thumbs/Aqours/练习服（練習着）/小原鞠莉_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\练习服（練習着）\\小原鞠莉_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p240",
+    "old": "thumbs/Aqours/MIRACLE WAVE/小原鞠莉_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\MIRACLE WAVE\\小原鞠莉_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p242",
+    "old": "thumbs/Aqours/MIRACLE WAVE/松浦果南_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\MIRACLE WAVE\\松浦果南_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p250",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/小原鞠莉_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\小原鞠莉_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p252",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/小原鞠莉_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\小原鞠莉_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p254",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/小原鞠莉_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\小原鞠莉_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p256",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/樱内梨子_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\樱内梨子_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p259",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/津岛善子_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\津岛善子_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p262",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/渡边曜_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\渡边曜_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p265",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/渡边曜_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\渡边曜_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p270",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/黑泽露比_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\黑泽露比_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p272",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/黑泽露比_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\黑泽露比_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p275",
+    "old": "thumbs/Aqours/夏季校服系列（夏制服）/黑泽黛雅_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\夏季校服系列（夏制服）\\黑泽黛雅_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p287",
+    "old": "thumbs/Aqours/睡衣/黑泽黛雅_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\睡衣\\黑泽黛雅_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p290",
+    "old": "thumbs/Aqours/セブン‐イレブン制服/松浦果南_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\セブン‐イレブン制服\\松浦果南_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p300",
+    "old": "thumbs/Aqours/スクフェス感謝祭2018/松浦果南_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\スクフェス感謝祭2018\\松浦果南_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p310",
+    "old": "thumbs/Aqours/Dazzling White Town/鹿角理亚_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\Dazzling White Town\\鹿角理亚_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p313",
+    "old": "thumbs/Aqours/想いよひとつになれ/松浦果南_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\想いよひとつになれ\\松浦果南_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p316",
+    "old": "thumbs/Aqours/想いよひとつになれ/津岛善子_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\想いよひとつになれ\\津岛善子_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p319",
+    "old": "thumbs/Aqours/想いよひとつになれ/黑泽露比_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\想いよひとつになれ\\黑泽露比_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p321",
+    "old": "thumbs/Aqours/僕らの走ってきた道は…/国木田花丸_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\僕らの走ってきた道は…\\国木田花丸_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p324",
+    "old": "thumbs/Aqours/僕らの走ってきた道は…/松浦果南_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\僕らの走ってきた道は…\\松浦果南_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p326",
+    "old": "thumbs/Aqours/僕らの走ってきた道は…/樱内梨子_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\僕らの走ってきた道は…\\樱内梨子_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p336",
+    "old": "thumbs/Aqours/未体験HORIZON/黑泽露比_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\未体験HORIZON\\黑泽露比_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p339",
+    "old": "thumbs/Aqours/永久hours/国木田花丸_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\永久hours\\国木田花丸_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p350",
+    "old": "thumbs/Aqours/Next SPARKLING!!/松浦果南_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\Next SPARKLING!!\\松浦果南_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p370",
+    "old": "thumbs/Aqours/The School Idol Movie/渡边曜_50cm（LL）_2.webp",
+    "new": "thumbs\\Aqours\\The School Idol Movie\\渡边曜_50cm（LL）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p374",
+    "old": "thumbs/Aqours/The School Idol Movie/黑泽露比_50cm（LL）_2.webp",
+    "new": "thumbs\\Aqours\\The School Idol Movie\\黑泽露比_50cm（LL）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p380",
+    "old": "thumbs/Aqours/渡辺曜 x うちっちー/松浦果南_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\渡辺曜 x うちっちー\\松浦果南_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p382",
+    "old": "thumbs/Aqours/渡辺曜 x うちっちー/渡边曜_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\渡辺曜 x うちっちー\\渡边曜_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p393",
+    "old": "thumbs/Aqours/ラブライブ！サンシャイン!!×初音ミク/小原鞠莉_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\ラブライブ！サンシャイン!!×初音ミク\\小原鞠莉_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p396",
+    "old": "thumbs/Aqours/ラブライブ！サンシャイン!!×初音ミク/松浦果南_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\ラブライブ！サンシャイン!!×初音ミク\\松浦果南_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p405",
+    "old": "thumbs/Aqours/ラブライブ！サンシャイン!!×初音ミク/黑泽露比_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\ラブライブ！サンシャイン!!×初音ミク\\黑泽露比_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p409",
+    "old": "thumbs/Aqours/DREAMY COLOR/国木田花丸_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\DREAMY COLOR\\国木田花丸_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p412",
+    "old": "thumbs/Aqours/DREAMY COLOR/松浦果南_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\DREAMY COLOR\\松浦果南_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p419",
+    "old": "thumbs/Aqours/幻日のヨハネ/津岛善子_40cm（L）_2.webp",
+    "new": "thumbs\\Aqours\\幻日のヨハネ\\津岛善子_40cm（L）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p422",
+    "old": "thumbs/Aqours/幻日のヨハネ/黑泽黛雅_16cm（S）_2.webp",
+    "new": "thumbs\\Aqours\\幻日のヨハネ\\黑泽黛雅_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p433",
+    "old": "thumbs/Aqours/运动服（711限定）/松浦果南_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\运动服（711限定）\\松浦果南_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p435",
+    "old": "thumbs/Aqours/ジャージ/松浦果南_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\ジャージ\\松浦果南_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p444",
+    "old": "thumbs/Aqours/运动服（711限定）/黑泽露比_10cm（SS）_2.webp",
+    "new": "thumbs\\Aqours\\运动服（711限定）\\黑泽露比_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p452",
+    "old": "thumbs/Aqours/All Stars/渡边曜_30cm（M）_2.webp",
+    "new": "thumbs\\Aqours\\All Stars\\渡边曜_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p456",
+    "old": "thumbs/Aqours/圣诞女孩（サンタガール）/国木田花丸_メガジャンボ_2.webp",
+    "new": "thumbs\\Aqours\\圣诞女孩（サンタガール）\\国木田花丸_メガジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p528",
+    "old": "thumbs/虹咲学园/冬季校服系列（冬制服）/米雅·泰勒_テラジャンボ_2.webp",
+    "new": "thumbs\\虹咲学园\\冬季校服系列（冬制服）\\米雅·泰勒_テラジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p530",
+    "old": "thumbs/虹咲学园/冬季校服系列（冬制服）/米雅·泰勒_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\冬季校服系列（冬制服）\\米雅·泰勒_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p532",
+    "old": "thumbs/虹咲学园/冬季校服系列（冬制服）/米雅·泰勒_10cm（SS）_2.webp",
+    "new": "thumbs\\虹咲学园\\冬季校服系列（冬制服）\\米雅·泰勒_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p537",
+    "old": "thumbs/虹咲学园/冬季校服系列（冬制服）/高咲侑_テラジャンボ_2.webp",
+    "new": "thumbs\\虹咲学园\\冬季校服系列（冬制服）\\高咲侑_テラジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p539",
+    "old": "thumbs/虹咲学园/冬季校服系列（冬制服）/高咲侑_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\冬季校服系列（冬制服）\\高咲侑_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p541",
+    "old": "thumbs/虹咲学园/冬季校服系列（冬制服）/高咲侑_10cm（SS）_2.webp",
+    "new": "thumbs\\虹咲学园\\冬季校服系列（冬制服）\\高咲侑_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p554",
+    "old": "thumbs/虹咲学园/冬练习服（冬練習着）/高咲侑_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\冬练习服（冬練習着）\\高咲侑_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p560",
+    "old": "thumbs/虹咲学园/虹色passion/宫下爱_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\虹色passion\\宫下爱_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p571",
+    "old": "thumbs/虹咲学园/夏季校服系列（夏制服）/中须霞_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\夏季校服系列（夏制服）\\中须霞_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p573",
+    "old": "thumbs/虹咲学园/夏季校服系列（夏制服）/中须霞_メガジャンボ_2.webp",
+    "new": "thumbs\\虹咲学园\\夏季校服系列（夏制服）\\中须霞_メガジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p575",
+    "old": "thumbs/虹咲学园/夏季校服系列（夏制服）/中须霞_10cm（SS）_2.webp",
+    "new": "thumbs\\虹咲学园\\夏季校服系列（夏制服）\\中须霞_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p598",
+    "old": "thumbs/虹咲学园/夏季校服系列（夏制服）/高咲侑_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\夏季校服系列（夏制服）\\高咲侑_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p600",
+    "old": "thumbs/虹咲学园/夏季校服系列（夏制服）/高咲侑_メガジャンボ_2.webp",
+    "new": "thumbs\\虹咲学园\\夏季校服系列（夏制服）\\高咲侑_メガジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p602",
+    "old": "thumbs/虹咲学园/夏季校服系列（夏制服）/高咲侑_10cm（SS）_2.webp",
+    "new": "thumbs\\虹咲学园\\夏季校服系列（夏制服）\\高咲侑_10cm（SS）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p643",
+    "old": "thumbs/虹咲学园/Future Parade/朝香果林_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\Future Parade\\朝香果林_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p645",
+    "old": "thumbs/虹咲学园/Future Parade/樱坂雫_16cm（S）_2.webp",
+    "new": "thumbs\\虹咲学园\\Future Parade\\樱坂雫_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p654",
+    "old": "thumbs/Liella!/Let’s be ONE/叶月恋_16cm（S）_2.webp",
+    "new": "thumbs\\Liella!\\Let’s be ONE\\叶月恋_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p680",
+    "old": "thumbs/Liella!/冬季校服系列（冬制服）/涩谷香音_16cm（S）_2.webp",
+    "new": "thumbs\\Liella!\\冬季校服系列（冬制服）\\涩谷香音_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p687",
+    "old": "thumbs/Liella!/冬季校服系列（冬制服）/鬼冢冬毬_16cm（S）_2.webp",
+    "new": "thumbs\\Liella!\\冬季校服系列（冬制服）\\鬼冢冬毬_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p689",
+    "old": "thumbs/Liella!/冬季校服系列（冬制服）/鬼冢冬毬_メガジャンボ_2.webp",
+    "new": "thumbs\\Liella!\\冬季校服系列（冬制服）\\鬼冢冬毬_メガジャンボ.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p716",
+    "old": "thumbs/Liella!/Brilliant Trilogy/唐可可_16cm（S）_2.webp",
+    "new": "thumbs\\Liella!\\Brilliant Trilogy\\唐可可_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p722",
+    "old": "thumbs/Liella!/Brilliant Trilogy/若菜四季_16cm（S）_2.webp",
+    "new": "thumbs\\Liella!\\Brilliant Trilogy\\若菜四季_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p730",
+    "old": "thumbs/莲之空/Dream Believers/夕雾缀理_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\Dream Believers\\夕雾缀理_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p743",
+    "old": "thumbs/莲之空/冬季校服系列（冬制服）/夕雾缀理_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\冬季校服系列（冬制服）\\夕雾缀理_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p746",
+    "old": "thumbs/莲之空/冬季校服系列（冬制服）/安养寺姬芽_30cm（M）_2.webp",
+    "new": "thumbs\\莲之空\\冬季校服系列（冬制服）\\安养寺姬芽_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p754",
+    "old": "thumbs/莲之空/冬季校服系列（冬制服）/桂城泉_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\冬季校服系列（冬制服）\\桂城泉_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p759",
+    "old": "thumbs/莲之空/冬季校服系列（冬制服）/藤岛慈_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\冬季校服系列（冬制服）\\藤岛慈_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p761",
+    "old": "thumbs/莲之空/冬季校服系列（冬制服）/藤岛慈_30cm（M）_2.webp",
+    "new": "thumbs\\莲之空\\冬季校服系列（冬制服）\\藤岛慈_30cm（M）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p779",
+    "old": "thumbs/莲之空/夏季校服系列（夏制服）/夕雾缀理_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\夏季校服系列（夏制服）\\夕雾缀理_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p795",
+    "old": "thumbs/莲之空/推特/藤岛慈_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\推特\\藤岛慈_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p807",
+    "old": "thumbs/莲之空/アイドゥーミー！/塞拉斯_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\アイドゥーミー！\\塞拉斯_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p809",
+    "old": "thumbs/莲之空/アイドゥーミー！/大泽琉璃乃_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\アイドゥーミー！\\大泽琉璃乃_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p814",
+    "old": "thumbs/莲之空/アイドゥーミー！/村野沙耶香_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\アイドゥーミー！\\村野沙耶香_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p838",
+    "old": "thumbs/莲之空/セガUFOキャッチャー/大泽琉璃乃_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\セガUFOキャッチャー\\大泽琉璃乃_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p839",
+    "old": "thumbs/莲之空/セガUFOキャッチャー/大泽琉璃乃_16cm（S）_3.webp",
+    "new": "thumbs\\莲之空\\セガUFOキャッチャー\\大泽琉璃乃_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p845",
+    "old": "thumbs/莲之空/セガUFOキャッチャー/藤岛慈_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\セガUFOキャッチャー\\藤岛慈_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p853",
+    "old": "thumbs/莲之空/セガ ラッキーくじ　B賞/安养寺姬芽_16cm（S）_2.webp",
+    "new": "thumbs\\莲之空\\セガ ラッキーくじ　B賞\\安养寺姬芽_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p873",
+    "old": "thumbs/いきづらい部/What is my LIFE？/春宮ゆくり_16cm（S）_2.webp",
+    "new": "thumbs\\いきづらい部\\What is my LIFE？\\春宮ゆくり_16cm（S）.webp",
+    "reason": "exact match"
+  },
+  {
+    "id": "p875",
+    "old": "thumbs/いきづらい部/What is my LIFE？/此花辉夜_16cm（S）_2.webp",
+    "new": "thumbs\\いきづらい部\\What is my LIFE？\\此花辉夜_16cm（S）.webp",
+    "reason": "exact match"
+  }
+]

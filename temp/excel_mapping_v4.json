@@ -1,0 +1,3355 @@
+[
+  {
+    "series": "μ's",
+    "character_ja": "南ことり",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.186,
+    "col_overlaps": {
+      "3": 58.66,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 29.34
+    },
+    "img_width": 344,
+    "img_height": 239
+  },
+  {
+    "series": "μ's",
+    "character_ja": "園田海未",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.192,
+    "col_overlaps": {
+      "4": 59.18,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 17.82
+    },
+    "img_width": 333,
+    "img_height": 231
+  },
+  {
+    "series": "μ's",
+    "character_ja": "矢澤にこ",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.196,
+    "col_overlaps": {
+      "5": 55.5,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 15.5
+    },
+    "img_width": 327,
+    "img_height": 234
+  },
+  {
+    "series": "μ's",
+    "character_ja": "東條希",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.189,
+    "col_overlaps": {
+      "6": 61.97,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 20.03
+    },
+    "img_width": 338,
+    "img_height": 248
+  },
+  {
+    "series": "μ's",
+    "character_ja": "絢瀬絵里",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.186,
+    "col_overlaps": {
+      "7": 59.59,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 28.41
+    },
+    "img_width": 344,
+    "img_height": 239
+  },
+  {
+    "series": "μ's",
+    "character_ja": "西木野真姫",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.182,
+    "col_overlaps": {
+      "8": 61.21,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 34.79
+    },
+    "img_width": 352,
+    "img_height": 249
+  },
+  {
+    "series": "μ's",
+    "character_ja": "小泉花陽",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.186,
+    "col_overlaps": {
+      "9": 55.89,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 33.11
+    },
+    "img_width": 345,
+    "img_height": 225
+  },
+  {
+    "series": "μ's",
+    "character_ja": "星空凛",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.203,
+    "col_overlaps": {
+      "10": 58.99,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0
+    },
+    "img_width": 346,
+    "img_height": 241
+  },
+  {
+    "series": "μ's",
+    "character_ja": "Unknown_12",
+    "size": "メガジャンボ",
+    "kind": "Sunny Day Song",
+    "start_row": 10,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "11": 61.71,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0
+    },
+    "img_width": 344,
+    "img_height": 225
+  },
+  {
+    "series": "μ's",
+    "character_ja": "南ことり",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.183,
+    "col_overlaps": {
+      "3": 55.24,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 37.76
+    },
+    "img_width": 349,
+    "img_height": 229
+  },
+  {
+    "series": "μ's",
+    "character_ja": "園田海未",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.192,
+    "col_overlaps": {
+      "4": 50.62,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 26.38
+    },
+    "img_width": 333,
+    "img_height": 218
+  },
+  {
+    "series": "μ's",
+    "character_ja": "矢澤にこ",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.194,
+    "col_overlaps": {
+      "5": 53.86,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 20.14
+    },
+    "img_width": 330,
+    "img_height": 217
+  },
+  {
+    "series": "μ's",
+    "character_ja": "東條希",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.281,
+    "col_overlaps": {
+      "6": 53.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 47.0
+    },
+    "img_width": 228,
+    "img_height": 331
+  },
+  {
+    "series": "μ's",
+    "character_ja": "絢瀬絵里",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.186,
+    "col_overlaps": {
+      "7": 49.67,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 38.33
+    },
+    "img_width": 344,
+    "img_height": 206
+  },
+  {
+    "series": "μ's",
+    "character_ja": "西木野真姫",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.182,
+    "col_overlaps": {
+      "8": 53.43,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 42.57
+    },
+    "img_width": 352,
+    "img_height": 230
+  },
+  {
+    "series": "μ's",
+    "character_ja": "小泉花陽",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.188,
+    "col_overlaps": {
+      "9": 55.41,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 29.59
+    },
+    "img_width": 341,
+    "img_height": 227
+  },
+  {
+    "series": "μ's",
+    "character_ja": "星空凛",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.204,
+    "col_overlaps": {
+      "10": 57.35,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0
+    },
+    "img_width": 343,
+    "img_height": 231
+  },
+  {
+    "series": "μ's",
+    "character_ja": "Unknown_12",
+    "size": "40cm(L)",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.259,
+    "col_overlaps": {
+      "11": 54.72,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0
+    },
+    "img_width": 336,
+    "img_height": 223
+  },
+  {
+    "series": "μ's",
+    "character_ja": "南ことり",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.444,
+    "col_overlaps": {
+      "3": 56.31,
+      "4": 64.0,
+      "5": 23.69
+    },
+    "img_width": 144,
+    "img_height": 271
+  },
+  {
+    "series": "μ's",
+    "character_ja": "園田海未",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.258,
+    "col_overlaps": {
+      "4": 60.99,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 59.01
+    },
+    "img_width": 248,
+    "img_height": 326
+  },
+  {
+    "series": "μ's",
+    "character_ja": "矢澤にこ",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.284,
+    "col_overlaps": {
+      "5": 62.72,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 34.28
+    },
+    "img_width": 225,
+    "img_height": 311
+  },
+  {
+    "series": "μ's",
+    "character_ja": "東條希",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.282,
+    "col_overlaps": {
+      "6": 55.71,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 43.29
+    },
+    "img_width": 227,
+    "img_height": 331
+  },
+  {
+    "series": "μ's",
+    "character_ja": "絢瀬絵里",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.303,
+    "col_overlaps": {
+      "7": 62.72,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 20.28
+    },
+    "img_width": 211,
+    "img_height": 334
+  },
+  {
+    "series": "μ's",
+    "character_ja": "西木野真姫",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.278,
+    "col_overlaps": {
+      "8": 53.99,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 48.01
+    },
+    "img_width": 230,
+    "img_height": 344
+  },
+  {
+    "series": "μ's",
+    "character_ja": "小泉花陽",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.288,
+    "col_overlaps": {
+      "9": 61.44,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 32.56
+    },
+    "img_width": 222,
+    "img_height": 335
+  },
+  {
+    "series": "μ's",
+    "character_ja": "星空凛",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.327,
+    "col_overlaps": {
+      "10": 58.87,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 9.13
+    },
+    "img_width": 196,
+    "img_height": 350
+  },
+  {
+    "series": "μ's",
+    "character_ja": "Unknown_12",
+    "size": "10cm（SS）",
+    "kind": "No Brand Girls",
+    "start_row": 122,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.354,
+    "col_overlaps": {
+      "11": 47.15,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 5.85
+    },
+    "img_width": 181,
+    "img_height": 339
+  },
+  {
+    "series": "μ's",
+    "character_ja": "南ことり",
+    "size": "30cm（M）",
+    "kind": "感谢祭口水ver（よだれほのか）",
+    "start_row": 66,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.315,
+    "col_overlaps": {
+      "3": 62.68,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 12.32
+    },
+    "img_width": 203,
+    "img_height": 168
+  },
+  {
+    "series": "μ's",
+    "character_ja": "南ことり",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.183,
+    "col_overlaps": {
+      "3": 62.38,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 30.62
+    },
+    "img_width": 349,
+    "img_height": 229
+  },
+  {
+    "series": "μ's",
+    "character_ja": "園田海未",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.192,
+    "col_overlaps": {
+      "4": 57.76,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 19.24
+    },
+    "img_width": 333,
+    "img_height": 218
+  },
+  {
+    "series": "μ's",
+    "character_ja": "矢澤にこ",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.194,
+    "col_overlaps": {
+      "5": 53.86,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 20.14
+    },
+    "img_width": 330,
+    "img_height": 217
+  },
+  {
+    "series": "μ's",
+    "character_ja": "東條希",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.281,
+    "col_overlaps": {
+      "6": 57.29,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 42.71
+    },
+    "img_width": 228,
+    "img_height": 331
+  },
+  {
+    "series": "μ's",
+    "character_ja": "絢瀬絵里",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.186,
+    "col_overlaps": {
+      "7": 59.67,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 28.33
+    },
+    "img_width": 344,
+    "img_height": 206
+  },
+  {
+    "series": "μ's",
+    "character_ja": "西木野真姫",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.182,
+    "col_overlaps": {
+      "8": 62.06,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 33.94
+    },
+    "img_width": 352,
+    "img_height": 230
+  },
+  {
+    "series": "μ's",
+    "character_ja": "小泉花陽",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.188,
+    "col_overlaps": {
+      "9": 61.36,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 23.64
+    },
+    "img_width": 341,
+    "img_height": 227
+  },
+  {
+    "series": "μ's",
+    "character_ja": "星空凛",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.201,
+    "col_overlaps": {
+      "10": 63.06,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0
+    },
+    "img_width": 343,
+    "img_height": 231
+  },
+  {
+    "series": "μ's",
+    "character_ja": "Unknown_12",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.266,
+    "col_overlaps": {
+      "11": 49.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0
+    },
+    "img_width": 336,
+    "img_height": 223
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "桜内梨子",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.26,
+    "col_overlaps": {
+      "3": 58.5,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 59.5
+    },
+    "img_width": 246,
+    "img_height": 349
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "渡辺曜",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.288,
+    "col_overlaps": {
+      "4": 59.54,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 34.46
+    },
+    "img_width": 222,
+    "img_height": 358
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "松浦果南",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.292,
+    "col_overlaps": {
+      "5": 17.08,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 9.92
+    },
+    "img_width": 219,
+    "img_height": 360
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ダイヤ",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.261,
+    "col_overlaps": {
+      "6": 57.82,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 59.18
+    },
+    "img_width": 245,
+    "img_height": 346
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "小原鞠莉",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.405,
+    "col_overlaps": {
+      "7": 57.84,
+      "8": 64.0,
+      "9": 36.16
+    },
+    "img_width": 158,
+    "img_height": 228
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "津島善子",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 9,
+    "best_col": 9,
+    "best_ratio": 0.328,
+    "col_overlaps": {
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 3.0
+    },
+    "img_width": 195,
+    "img_height": 376
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ルビィ",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 9,
+    "best_col": 11,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "10": 18.62,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 29.38
+    },
+    "img_width": 240,
+    "img_height": 345
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "鹿角聖良",
+    "size": "16cm（S）",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 210,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.292,
+    "col_overlaps": {
+      "11": 57.34,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 33.66
+    },
+    "img_width": 219,
+    "img_height": 374
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "桜内梨子",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.264,
+    "col_overlaps": {
+      "3": 63.71,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 50.29
+    },
+    "img_width": 242,
+    "img_height": 339
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "渡辺曜",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.261,
+    "col_overlaps": {
+      "4": 60.43,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 56.57
+    },
+    "img_width": 245,
+    "img_height": 348
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "松浦果南",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "5": 62.71,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 52.29
+    },
+    "img_width": 243,
+    "img_height": 344
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ダイヤ",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.264,
+    "col_overlaps": {
+      "6": 61.86,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 52.14
+    },
+    "img_width": 242,
+    "img_height": 344
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "小原鞠莉",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.257,
+    "col_overlaps": {
+      "7": 61.14,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 59.86
+    },
+    "img_width": 249,
+    "img_height": 337
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "津島善子",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "8": 17.57,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 30.43
+    },
+    "img_width": 240,
+    "img_height": 339
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "国木田花丸",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "9": 57.43,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 57.57
+    },
+    "img_width": 243,
+    "img_height": 355
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ルビィ",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.275,
+    "col_overlaps": {
+      "10": 63.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 42.0
+    },
+    "img_width": 233,
+    "img_height": 356
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "鹿角聖良",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.276,
+    "col_overlaps": {
+      "11": 60.29,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 43.71
+    },
+    "img_width": 232,
+    "img_height": 341
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "Unknown_15",
+    "size": "10cm（SS）",
+    "kind": "ラブライブ！サンシャイン!!×初音ミク",
+    "start_row": 370,
+    "start_col": 14,
+    "best_col": 15,
+    "best_ratio": 0.339,
+    "col_overlaps": {
+      "14": 60.61,
+      "15": 64.0,
+      "16": 64.0
+    },
+    "img_width": 291,
+    "img_height": 366
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "桜内梨子",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.174,
+    "col_overlaps": {
+      "3": 61.97,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 49.03
+    },
+    "img_width": 367,
+    "img_height": 239
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "渡辺曜",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.277,
+    "col_overlaps": {
+      "4": 57.29,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 45.71
+    },
+    "img_width": 231,
+    "img_height": 349
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "松浦果南",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.222,
+    "col_overlaps": {
+      "5": 55.47,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 40.53
+    },
+    "img_width": 288,
+    "img_height": 423
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ダイヤ",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.303,
+    "col_overlaps": {
+      "6": 59.59,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 23.41
+    },
+    "img_width": 211,
+    "img_height": 349
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "小原鞠莉",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.302,
+    "col_overlaps": {
+      "7": 61.06,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 22.94
+    },
+    "img_width": 212,
+    "img_height": 360
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "津島善子",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.272,
+    "col_overlaps": {
+      "8": 19.13,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 23.87
+    },
+    "img_width": 235,
+    "img_height": 368
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "国木田花丸",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.29,
+    "col_overlaps": {
+      "9": 62.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 31.0
+    },
+    "img_width": 221,
+    "img_height": 384
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ルビィ",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.274,
+    "col_overlaps": {
+      "10": 60.2,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 45.8
+    },
+    "img_width": 234,
+    "img_height": 354
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "鹿角聖良",
+    "size": "30cm（M）",
+    "kind": "君のこころは輝いてるかい",
+    "start_row": 114,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.295,
+    "col_overlaps": {
+      "11": 54.9,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 34.1
+    },
+    "img_width": 217,
+    "img_height": 354
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "桜内梨子",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.275,
+    "col_overlaps": {
+      "3": 59.27,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 45.73
+    },
+    "img_width": 233,
+    "img_height": 338
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "松浦果南",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.274,
+    "col_overlaps": {
+      "5": 58.26,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 47.74
+    },
+    "img_width": 234,
+    "img_height": 328
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ダイヤ",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.29,
+    "col_overlaps": {
+      "6": 54.14,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 38.86
+    },
+    "img_width": 221,
+    "img_height": 323
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "小原鞠莉",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.283,
+    "col_overlaps": {
+      "7": 52.85,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 45.15
+    },
+    "img_width": 226,
+    "img_height": 354
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "津島善子",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.287,
+    "col_overlaps": {
+      "8": 51.28,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 43.72
+    },
+    "img_width": 223,
+    "img_height": 345
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "国木田花丸",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.275,
+    "col_overlaps": {
+      "9": 53.99,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 51.01
+    },
+    "img_width": 233,
+    "img_height": 356
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ルビィ",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.27,
+    "col_overlaps": {
+      "10": 59.85,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 49.15
+    },
+    "img_width": 237,
+    "img_height": 361
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "鹿角聖良",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.278,
+    "col_overlaps": {
+      "11": 55.56,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 46.44
+    },
+    "img_width": 230,
+    "img_height": 335
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "桜内梨子",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "3": 61.99,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 50.01
+    },
+    "img_width": 240,
+    "img_height": 338
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "渡辺曜",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.282,
+    "col_overlaps": {
+      "4": 63.72,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 35.28
+    },
+    "img_width": 227,
+    "img_height": 323
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "松浦果南",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.272,
+    "col_overlaps": {
+      "5": 56.43,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 50.57
+    },
+    "img_width": 235,
+    "img_height": 329
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ダイヤ",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.281,
+    "col_overlaps": {
+      "6": 63.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 37.0
+    },
+    "img_width": 228,
+    "img_height": 323
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "小原鞠莉",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.259,
+    "col_overlaps": {
+      "7": 56.85,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 62.15
+    },
+    "img_width": 247,
+    "img_height": 341
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "津島善子",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.275,
+    "col_overlaps": {
+      "8": 56.86,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 48.14
+    },
+    "img_width": 233,
+    "img_height": 329
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "国木田花丸",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.251,
+    "col_overlaps": {
+      "9": 63.29,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 63.71
+    },
+    "img_width": 255,
+    "img_height": 347
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ルビィ",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 9,
+    "best_col": 11,
+    "best_ratio": 0.244,
+    "col_overlaps": {
+      "10": 17.44,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 52.56
+    },
+    "img_width": 262,
+    "img_height": 353
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "鹿角聖良",
+    "size": "メガジャンボ",
+    "kind": "圣诞女孩（サンタガール）",
+    "start_row": 10,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.287,
+    "col_overlaps": {
+      "11": 53.23,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 41.77
+    },
+    "img_width": 223,
+    "img_height": 324
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "渡辺曜",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.288,
+    "col_overlaps": {
+      "4": 58.11,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 35.89
+    },
+    "img_width": 222,
+    "img_height": 358
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "松浦果南",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.292,
+    "col_overlaps": {
+      "5": 60.23,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 30.77
+    },
+    "img_width": 219,
+    "img_height": 360
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ダイヤ",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.261,
+    "col_overlaps": {
+      "6": 62.11,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 54.89
+    },
+    "img_width": 245,
+    "img_height": 346
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "小原鞠莉",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.405,
+    "col_overlaps": {
+      "7": 59.27,
+      "8": 64.0,
+      "9": 34.73
+    },
+    "img_width": 158,
+    "img_height": 228
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "津島善子",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.309,
+    "col_overlaps": {
+      "8": 55.79,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 23.21
+    },
+    "img_width": 207,
+    "img_height": 341
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "国木田花丸",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.328,
+    "col_overlaps": {
+      "9": 48.12,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 18.88
+    },
+    "img_width": 195,
+    "img_height": 376
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "黒澤ルビィ",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "10": 63.82,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 48.18
+    },
+    "img_width": 240,
+    "img_height": 345
+  },
+  {
+    "series": "Aqours",
+    "character_ja": "鹿角聖良",
+    "size": "40cm(L)",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 42,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.303,
+    "col_overlaps": {
+      "11": 50.2,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 32.8
+    },
+    "img_width": 211,
+    "img_height": 359
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "桜坂しずく",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.441,
+    "col_overlaps": {
+      "3": 62.8,
+      "4": 64.0,
+      "5": 108.5,
+      "6": 10.7
+    },
+    "img_width": 246,
+    "img_height": 359
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "近江彼方",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "5": 60.57,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 51.43
+    },
+    "img_width": 240,
+    "img_height": 362
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "天王寺璃奈",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.422,
+    "col_overlaps": {
+      "6": 64.0,
+      "7": 64.0,
+      "8": 104.12,
+      "9": 14.88
+    },
+    "img_width": 247,
+    "img_height": 366
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "朝香果林",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "9": 63.13,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 62.87
+    },
+    "img_width": 254,
+    "img_height": 369
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "宮下愛",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.247,
+    "col_overlaps": {
+      "10": 62.73,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 4.27
+    },
+    "img_width": 259,
+    "img_height": 378
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "ミア・テイラー",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "11": 63.33,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 62.67
+    },
+    "img_width": 254,
+    "img_height": 374
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "三船栞子",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "12": 63.13,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 51.87
+    },
+    "img_width": 243,
+    "img_height": 367
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "高咲侑",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 14,
+    "best_col": 15,
+    "best_ratio": 0.244,
+    "col_overlaps": {
+      "14": 63.33,
+      "15": 64.0,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 6.67
+    },
+    "img_width": 262,
+    "img_height": 378
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "Unknown_16",
+    "size": "テラジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 14,
+    "best_col": 16,
+    "best_ratio": 0.306,
+    "col_overlaps": {
+      "15": 17.2,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 64.0
+    },
+    "img_width": 246,
+    "img_height": 361
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "桜坂しずく",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.476,
+    "col_overlaps": {
+      "3": 54.87,
+      "4": 64.0,
+      "5": 108.13
+    },
+    "img_width": 227,
+    "img_height": 334
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "天王寺璃奈",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.447,
+    "col_overlaps": {
+      "7": 64.0,
+      "8": 104.12,
+      "9": 64.0,
+      "10": 0.88
+    },
+    "img_width": 233,
+    "img_height": 333
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "エマ・ヴェルデ",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.283,
+    "col_overlaps": {
+      "8": 58.06,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 39.94
+    },
+    "img_width": 226,
+    "img_height": 327
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "朝香果林",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 8,
+    "best_col": 10,
+    "best_ratio": 0.269,
+    "col_overlaps": {
+      "9": 51.19,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 58.81
+    },
+    "img_width": 238,
+    "img_height": 335
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "宮下愛",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 9,
+    "best_col": 11,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "10": 17.8,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 33.2
+    },
+    "img_width": 243,
+    "img_height": 332
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "ミア・テイラー",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 10,
+    "best_col": 12,
+    "best_ratio": 0.27,
+    "col_overlaps": {
+      "11": 16.13,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 28.87
+    },
+    "img_width": 237,
+    "img_height": 348
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "三船栞子",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.274,
+    "col_overlaps": {
+      "12": 62.6,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 43.4
+    },
+    "img_width": 234,
+    "img_height": 325
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "鐘嵐珠",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 12,
+    "best_col": 14,
+    "best_ratio": 0.243,
+    "col_overlaps": {
+      "13": 19.13,
+      "14": 64.0,
+      "15": 64.0,
+      "16": 64.0,
+      "17": 51.87
+    },
+    "img_width": 263,
+    "img_height": 320
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "高咲侑",
+    "size": "30cm（M）",
+    "kind": "一单",
+    "start_row": 18,
+    "start_col": 13,
+    "best_col": 15,
+    "best_ratio": 0.29,
+    "col_overlaps": {
+      "14": 16.73,
+      "15": 64.0,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 12.27
+    },
+    "img_width": 221,
+    "img_height": 339
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "桜坂しずく",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.441,
+    "col_overlaps": {
+      "3": 62.8,
+      "4": 64.0,
+      "5": 108.5,
+      "6": 10.7
+    },
+    "img_width": 246,
+    "img_height": 359
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "近江彼方",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "5": 60.57,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 51.43
+    },
+    "img_width": 240,
+    "img_height": 362
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "天王寺璃奈",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.422,
+    "col_overlaps": {
+      "6": 64.0,
+      "7": 64.0,
+      "8": 104.12,
+      "9": 14.88
+    },
+    "img_width": 247,
+    "img_height": 366
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "朝香果林",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "9": 63.13,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 62.87
+    },
+    "img_width": 254,
+    "img_height": 369
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "宮下愛",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.247,
+    "col_overlaps": {
+      "10": 62.73,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 4.27
+    },
+    "img_width": 259,
+    "img_height": 378
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "ミア・テイラー",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "11": 63.33,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 62.67
+    },
+    "img_width": 254,
+    "img_height": 374
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "三船栞子",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "12": 63.13,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 51.87
+    },
+    "img_width": 243,
+    "img_height": 367
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "高咲侑",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 14,
+    "best_col": 15,
+    "best_ratio": 0.244,
+    "col_overlaps": {
+      "14": 63.33,
+      "15": 64.0,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 6.67
+    },
+    "img_width": 262,
+    "img_height": 378
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "Unknown_16",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 34,
+    "start_col": 14,
+    "best_col": 16,
+    "best_ratio": 0.306,
+    "col_overlaps": {
+      "15": 17.2,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 64.0
+    },
+    "img_width": 246,
+    "img_height": 361
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "桜坂しずく",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 2,
+    "best_col": 5,
+    "best_ratio": 0.452,
+    "col_overlaps": {
+      "3": 35.61,
+      "4": 64.0,
+      "5": 108.5,
+      "6": 31.89
+    },
+    "img_width": 240,
+    "img_height": 377
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "天王寺璃奈",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.389,
+    "col_overlaps": {
+      "6": 60.2,
+      "7": 64.0,
+      "8": 104.12,
+      "9": 39.67
+    },
+    "img_width": 268,
+    "img_height": 369
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "エマ・ヴェルデ",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.317,
+    "col_overlaps": {
+      "8": 57.86,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 16.14
+    },
+    "img_width": 202,
+    "img_height": 286
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "朝香果林",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 8,
+    "best_col": 10,
+    "best_ratio": 0.233,
+    "col_overlaps": {
+      "9": 56.52,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 26.47
+    },
+    "img_width": 275,
+    "img_height": 367
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "宮下愛",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.272,
+    "col_overlaps": {
+      "10": 60.73,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 46.27
+    },
+    "img_width": 235,
+    "img_height": 372
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "ミア・テイラー",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 10,
+    "best_col": 12,
+    "best_ratio": 0.266,
+    "col_overlaps": {
+      "11": 21.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 28.0
+    },
+    "img_width": 241,
+    "img_height": 371
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "三船栞子",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.245,
+    "col_overlaps": {
+      "12": 62.53,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 64.0,
+      "16": 6.47
+    },
+    "img_width": 261,
+    "img_height": 377
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "鐘嵐珠",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 13,
+    "best_col": 14,
+    "best_ratio": 0.366,
+    "col_overlaps": {
+      "13": 61.2,
+      "14": 64.0,
+      "15": 49.8
+    },
+    "img_width": 175,
+    "img_height": 251
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "高咲侑",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 14,
+    "best_col": 15,
+    "best_ratio": 0.251,
+    "col_overlaps": {
+      "14": 62.87,
+      "15": 64.0,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 0.13
+    },
+    "img_width": 255,
+    "img_height": 368
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "Unknown_16",
+    "size": "メガジャンボ",
+    "kind": "夏季校服系列（夏制服）",
+    "start_row": 10,
+    "start_col": 14,
+    "best_col": 16,
+    "best_ratio": 0.307,
+    "col_overlaps": {
+      "15": 16.33,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 64.0
+    },
+    "img_width": 253,
+    "img_height": 374
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "桜坂しずく",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.441,
+    "col_overlaps": {
+      "3": 62.8,
+      "4": 64.0,
+      "5": 108.5,
+      "6": 10.7
+    },
+    "img_width": 246,
+    "img_height": 359
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "近江彼方",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.267,
+    "col_overlaps": {
+      "5": 60.57,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 51.43
+    },
+    "img_width": 240,
+    "img_height": 362
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "天王寺璃奈",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.422,
+    "col_overlaps": {
+      "6": 64.0,
+      "7": 64.0,
+      "8": 104.12,
+      "9": 14.88
+    },
+    "img_width": 247,
+    "img_height": 366
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "朝香果林",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "9": 63.13,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 62.87
+    },
+    "img_width": 254,
+    "img_height": 369
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "宮下愛",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.247,
+    "col_overlaps": {
+      "10": 62.73,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 4.27
+    },
+    "img_width": 259,
+    "img_height": 378
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "ミア・テイラー",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 11,
+    "best_col": 12,
+    "best_ratio": 0.252,
+    "col_overlaps": {
+      "11": 63.33,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 62.67
+    },
+    "img_width": 254,
+    "img_height": 374
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "三船栞子",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "12": 63.13,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 51.87
+    },
+    "img_width": 243,
+    "img_height": 367
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "高咲侑",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 14,
+    "best_col": 15,
+    "best_ratio": 0.244,
+    "col_overlaps": {
+      "14": 63.33,
+      "15": 64.0,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 6.67
+    },
+    "img_width": 262,
+    "img_height": 378
+  },
+  {
+    "series": "虹ヶ咲学園スクールアイドル同好会",
+    "character_ja": "Unknown_16",
+    "size": "10cm（SS）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 106,
+    "start_col": 14,
+    "best_col": 16,
+    "best_ratio": 0.306,
+    "col_overlaps": {
+      "15": 17.2,
+      "16": 64.0,
+      "17": 64.0,
+      "18": 64.0
+    },
+    "img_width": 246,
+    "img_height": 361
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "唐可可",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.238,
+    "col_overlaps": {
+      "3": 63.6,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 13.4
+    },
+    "img_width": 269,
+    "img_height": 408
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "嵐千砂都",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.315,
+    "col_overlaps": {
+      "4": 20.87,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 54.13
+    },
+    "img_width": 203,
+    "img_height": 301
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "平安名すみれ",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.311,
+    "col_overlaps": {
+      "5": 18.53,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 59.47
+    },
+    "img_width": 206,
+    "img_height": 297
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "葉月恋",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 5,
+    "best_col": 7,
+    "best_ratio": 0.33,
+    "col_overlaps": {
+      "6": 19.93,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 46.07
+    },
+    "img_width": 194,
+    "img_height": 300
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "桜小路きな子",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.325,
+    "col_overlaps": {
+      "7": 19.8,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 49.2
+    },
+    "img_width": 197,
+    "img_height": 297
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "米女メイ",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.328,
+    "col_overlaps": {
+      "8": 19.73,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 47.27
+    },
+    "img_width": 195,
+    "img_height": 303
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "ウィーン",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 12,
+    "best_col": 12,
+    "best_ratio": 0.375,
+    "col_overlaps": {
+      "12": 104.74,
+      "13": 100.62,
+      "14": 64.0,
+      "15": 9.63
+    },
+    "img_width": 279,
+    "img_height": 372
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "鬼塚冬毬",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 26,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.339,
+    "col_overlaps": {
+      "13": 91.1,
+      "14": 64.0,
+      "15": 64.0,
+      "16": 49.9
+    },
+    "img_width": 269,
+    "img_height": 375
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "唐可可",
+    "size": "30cm（M）",
+    "kind": "始まりは君の空",
+    "start_row": 18,
+    "start_col": 2,
+    "best_col": 4,
+    "best_ratio": 0.263,
+    "col_overlaps": {
+      "3": 42.93,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 8.08
+    },
+    "img_width": 243,
+    "img_height": 377
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "嵐千砂都",
+    "size": "30cm（M）",
+    "kind": "始まりは君の空",
+    "start_row": 18,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.254,
+    "col_overlaps": {
+      "4": 18.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 42.0
+    },
+    "img_width": 252,
+    "img_height": 378
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "平安名すみれ",
+    "size": "30cm（M）",
+    "kind": "始まりは君の空",
+    "start_row": 18,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.251,
+    "col_overlaps": {
+      "5": 17.13,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 45.87
+    },
+    "img_width": 255,
+    "img_height": 389
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "葉月恋",
+    "size": "30cm（M）",
+    "kind": "始まりは君の空",
+    "start_row": 18,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.26,
+    "col_overlaps": {
+      "6": 63.4,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 54.6
+    },
+    "img_width": 246,
+    "img_height": 376
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "桜小路きな子",
+    "size": "30cm（M）",
+    "kind": "始まりは君の空",
+    "start_row": 18,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.257,
+    "col_overlaps": {
+      "7": 18.07,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 38.93
+    },
+    "img_width": 249,
+    "img_height": 377
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "唐可可",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.238,
+    "col_overlaps": {
+      "3": 63.6,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 13.4
+    },
+    "img_width": 269,
+    "img_height": 408
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "嵐千砂都",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.315,
+    "col_overlaps": {
+      "4": 20.87,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 54.13
+    },
+    "img_width": 203,
+    "img_height": 301
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "平安名すみれ",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.311,
+    "col_overlaps": {
+      "5": 18.53,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 59.47
+    },
+    "img_width": 206,
+    "img_height": 297
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "葉月恋",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 5,
+    "best_col": 7,
+    "best_ratio": 0.33,
+    "col_overlaps": {
+      "6": 19.93,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 46.07
+    },
+    "img_width": 194,
+    "img_height": 300
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "桜小路きな子",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.325,
+    "col_overlaps": {
+      "7": 19.8,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 49.2
+    },
+    "img_width": 197,
+    "img_height": 297
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "米女メイ",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.328,
+    "col_overlaps": {
+      "8": 19.73,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 47.27
+    },
+    "img_width": 195,
+    "img_height": 303
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "ウィーン",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 12,
+    "best_col": 12,
+    "best_ratio": 0.375,
+    "col_overlaps": {
+      "12": 104.74,
+      "13": 100.62,
+      "14": 64.0,
+      "15": 9.63
+    },
+    "img_width": 279,
+    "img_height": 372
+  },
+  {
+    "series": "Liella！",
+    "character_ja": "鬼塚冬毬",
+    "size": "メガジャンボ",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 12,
+    "best_col": 13,
+    "best_ratio": 0.339,
+    "col_overlaps": {
+      "13": 91.1,
+      "14": 64.0,
+      "15": 64.0,
+      "16": 49.9
+    },
+    "img_width": 269,
+    "img_height": 375
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "乙宗梢",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.418,
+    "col_overlaps": {
+      "3": 63.53,
+      "4": 64.0,
+      "5": 25.47
+    },
+    "img_width": 153,
+    "img_height": 240
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "村野さやか",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.374,
+    "col_overlaps": {
+      "5": 61.13,
+      "6": 64.0,
+      "7": 45.87
+    },
+    "img_width": 171,
+    "img_height": 279
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "夕霧綴理",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 5,
+    "best_col": 7,
+    "best_ratio": 0.368,
+    "col_overlaps": {
+      "6": 18.6,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 27.4
+    },
+    "img_width": 174,
+    "img_height": 238
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "徒町小鈴",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.444,
+    "col_overlaps": {
+      "7": 57.4,
+      "8": 64.0,
+      "9": 22.6
+    },
+    "img_width": 144,
+    "img_height": 237
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "大沢瑠璃乃",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.395,
+    "col_overlaps": {
+      "8": 58.73,
+      "9": 64.0,
+      "10": 39.27
+    },
+    "img_width": 162,
+    "img_height": 279
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "藤島慈",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.383,
+    "col_overlaps": {
+      "9": 61.13,
+      "10": 64.0,
+      "11": 41.87
+    },
+    "img_width": 167,
+    "img_height": 238
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "安養寺姫芽",
+    "size": "16cm（S）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 10,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.435,
+    "col_overlaps": {
+      "10": 56.2,
+      "11": 64.0,
+      "12": 26.8
+    },
+    "img_width": 147,
+    "img_height": 251
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "乙宗梢",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 4,
+    "best_ratio": 0.418,
+    "col_overlaps": {
+      "3": 63.53,
+      "4": 64.0,
+      "5": 25.47
+    },
+    "img_width": 153,
+    "img_height": 240
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "百生吟子",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 4,
+    "best_col": 5,
+    "best_ratio": 0.403,
+    "col_overlaps": {
+      "4": 61.53,
+      "5": 64.0,
+      "6": 33.47
+    },
+    "img_width": 159,
+    "img_height": 252
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "村野さやか",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 5,
+    "best_col": 6,
+    "best_ratio": 0.374,
+    "col_overlaps": {
+      "5": 61.13,
+      "6": 64.0,
+      "7": 45.87
+    },
+    "img_width": 171,
+    "img_height": 279
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "夕霧綴理",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 5,
+    "best_col": 7,
+    "best_ratio": 0.773,
+    "col_overlaps": {
+      "6": 17.27,
+      "7": 58.73
+    },
+    "img_width": 76,
+    "img_height": 95
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "徒町小鈴",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 7,
+    "best_col": 8,
+    "best_ratio": 0.444,
+    "col_overlaps": {
+      "7": 52.6,
+      "8": 64.0,
+      "9": 27.4
+    },
+    "img_width": 144,
+    "img_height": 237
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "大沢瑠璃乃",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 8,
+    "best_col": 9,
+    "best_ratio": 0.395,
+    "col_overlaps": {
+      "8": 58.73,
+      "9": 64.0,
+      "10": 39.27
+    },
+    "img_width": 162,
+    "img_height": 279
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "藤島慈",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.383,
+    "col_overlaps": {
+      "9": 61.13,
+      "10": 64.0,
+      "11": 41.87
+    },
+    "img_width": 167,
+    "img_height": 238
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "安養寺姫芽",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 10,
+    "best_col": 11,
+    "best_ratio": 0.435,
+    "col_overlaps": {
+      "10": 58.33,
+      "11": 64.0,
+      "12": 24.67
+    },
+    "img_width": 147,
+    "img_height": 251
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "セラス",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 10,
+    "best_col": 12,
+    "best_ratio": 0.356,
+    "col_overlaps": {
+      "11": 19.73,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 32.27
+    },
+    "img_width": 180,
+    "img_height": 297
+  },
+  {
+    "series": "蓮ノ空女学院スクールアイドルクラブ",
+    "character_ja": "錦上 マイカ",
+    "size": "30cm（M）",
+    "kind": "冬季校服系列（冬制服）",
+    "start_row": 2,
+    "start_col": 12,
+    "best_col": 14,
+    "best_ratio": 0.743,
+    "col_overlaps": {
+      "13": 17.2,
+      "14": 49.8
+    },
+    "img_width": 67,
+    "img_height": 107
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "麻布麻衣",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 2,
+    "best_col": 4,
+    "best_ratio": 0.244,
+    "col_overlaps": {
+      "3": 45.26,
+      "4": 64.0,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 24.74
+    },
+    "img_width": 262,
+    "img_height": 231
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "五桐 玲",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 3,
+    "best_col": 5,
+    "best_ratio": 0.239,
+    "col_overlaps": {
+      "4": 17.22,
+      "5": 64.0,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 58.78
+    },
+    "img_width": 268,
+    "img_height": 199
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "駒形花火",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 4,
+    "best_col": 6,
+    "best_ratio": 0.242,
+    "col_overlaps": {
+      "5": 17.2,
+      "6": 64.0,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 54.8
+    },
+    "img_width": 264,
+    "img_height": 211
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "金澤奇跡",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 6,
+    "best_col": 7,
+    "best_ratio": 0.236,
+    "col_overlaps": {
+      "6": 63.24,
+      "7": 64.0,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 15.76
+    },
+    "img_width": 271,
+    "img_height": 199
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "調布のりこ",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 6,
+    "best_col": 8,
+    "best_ratio": 0.232,
+    "col_overlaps": {
+      "7": 19.13,
+      "8": 64.0,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 0.87
+    },
+    "img_width": 276,
+    "img_height": 212
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "春宮ゆくり",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 7,
+    "best_col": 9,
+    "best_ratio": 0.231,
+    "col_overlaps": {
+      "8": 22.28,
+      "9": 64.0,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 62.72
+    },
+    "img_width": 277,
+    "img_height": 190
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "此花輝夜",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 9,
+    "best_col": 10,
+    "best_ratio": 0.213,
+    "col_overlaps": {
+      "9": 63.67,
+      "10": 64.0,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 45.33
+    },
+    "img_width": 301,
+    "img_height": 221
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "山田真緑",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 9,
+    "best_col": 11,
+    "best_ratio": 0.207,
+    "col_overlaps": {
+      "10": 24.53,
+      "11": 64.0,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 28.47
+    },
+    "img_width": 309,
+    "img_height": 238
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "佐々木翔音",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 10,
+    "best_col": 12,
+    "best_ratio": 0.208,
+    "col_overlaps": {
+      "11": 27.47,
+      "12": 64.0,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 64.0,
+      "16": 24.53
+    },
+    "img_width": 308,
+    "img_height": 219
+  },
+  {
+    "series": "いきづらい部",
+    "character_ja": "Unknown_13",
+    "size": "16cm（S）",
+    "kind": "What is my LIFE？",
+    "start_row": 2,
+    "start_col": 11,
+    "best_col": 13,
+    "best_ratio": 0.235,
+    "col_overlaps": {
+      "12": 16.8,
+      "13": 64.0,
+      "14": 64.0,
+      "15": 64.0,
+      "16": 64.0
+    },
+    "img_width": 279,
+    "img_height": 235
+  }
+]
