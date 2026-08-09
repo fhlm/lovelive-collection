@@ -1,6 +1,11 @@
 # 脚本和临时文件
 script/
 templ/
+temp/
+
+# Excel 文件（太大）
+*.xlsx
+*.xls
 
 # Python 临时文件
 __pycache__/
