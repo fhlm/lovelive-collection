@@ -71,7 +71,7 @@ body{
 .container{max-width:980px; margin:0 auto; padding:0 14px 40px}
 .toolbar{
   background:var(--card-bg); border:1px solid var(--border); border-radius:14px;
-  padding:12px 14px; margin-top:18px; display:flex; flex-wrap:nowrap; gap:10px; align-items:center;
+  padding:12px 14px; margin-top:18px; display:flex; flex-wrap:wrap; gap:10px; align-items:center;
   box-shadow:var(--shadow); position:sticky; top:0; z-index:100;
 }
 .toolbar select,.toolbar input{
@@ -170,6 +170,9 @@ body{
 @media (max-width:768px){
   .group-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px}
   .group-info{gap:4px 12px}
+  .toolbar{flex-wrap:wrap}
+  .toolbar select,.toolbar input{min-width:100px; font-size:12px}
+  .search-box{flex:1 1 120px; min-width:120px}
 }
 @media (max-width:480px){
   .header h1{font-size:21px}
@@ -181,6 +184,9 @@ body{
   .nui-card-size{font-size:9px}
   .group-series{font-size:10px}
   .group-progress{margin-left:0; width:100%; justify-content:flex-end}
+  .toolbar{gap:8px; padding:10px}
+  .toolbar select,.toolbar input{min-width:90px; font-size:11px; padding:6px 8px}
+  .search-box{flex:1 1 100px; min-width:100px}
 }
 </style>
 </head>
@@ -498,7 +504,10 @@ function updateRoleDropdown() {
     }
   });
   
-  Object.keys(roleMap).forEach(cn => {
+  // 按照官方角色顺序排列
+  const sortedChars = Object.keys(roleMap).sort((a, b) => charRank(a) - charRank(b));
+  
+  sortedChars.forEach(cn => {
     const o = document.createElement('option');
     o.value = cn;
     o.textContent = lang === 'ja' ? roleMap[cn] + '（' + cn + '）' : cn + '（' + roleMap[cn] + '）';
