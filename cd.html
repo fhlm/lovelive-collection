@@ -127,6 +127,12 @@ body{
   font-size:10px; color:var(--cherry-dark); cursor:pointer; opacity:.75; transition:opacity .15s;
 }
 .cd-card-zoom:hover{opacity:1}
+.cd-card-link{
+  position:absolute; top:4px; left:28px; z-index:2; width:20px; height:20px; border-radius:50%;
+  background:rgba(255,255,255,.9); border:1px solid #e0c8d0; display:flex; align-items:center; justify-content:center;
+  font-size:10px; color:var(--cherry-dark); cursor:pointer; opacity:.75; transition:opacity .15s; text-decoration:none;
+}
+.cd-card-link:hover{opacity:1; background:#fff}
 .cd-card-img{
   height:128px; display:flex; align-items:center; justify-content:center;
   background:#fff; border-radius:8px; overflow:hidden;
@@ -423,6 +429,7 @@ function cardHtml(it){
   return `<div class="cd-card${checked ? ' checked' : ''}" data-id="${it.id}">
     <div class="cd-card-check">✓</div>
     <div class="cd-card-zoom" title="${esc(T('songsHead'))}" data-id="${it.id}">🔍</div>
+    ${it.url ? `<a class="cd-card-link" href="${esc(it.url)}" target="_blank" rel="noopener" title="${esc(T('detailLink'))}" onclick="event.stopPropagation()">🔗</a>` : ''}
     <div class="cd-card-img">
       <img src="${esc(it.img)}" alt="${esc(it.title)}" loading="lazy">
     </div>
@@ -583,6 +590,8 @@ $('f-cat').addEventListener('change', render);
 $('f-status').addEventListener('change', render);
 $('sort').addEventListener('change', e => { sortAsc = e.target.value !== 'desc'; render(); });
 $('item-list').addEventListener('click', e => {
+  // 🔗 官网链接 → 新标签页打开（不触发勾选）
+  if (e.target.closest('.cd-card-link')) return;
   // 🔍 按钮 → 详情弹层
   const zoom = e.target.closest('.cd-card-zoom');
   if (zoom) { openLightbox(zoom.dataset.id); return; }
