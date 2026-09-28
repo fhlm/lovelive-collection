@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Love Live! 莲之空女学院 CD 收藏进度追踪">
+<title>Love Live! 莲之空CD图鉴</title>
+<style>
+:root{
+  --accent:#e94f8d; --accent-dark:#c63a74;
+  --accent-gradient:linear-gradient(135deg,#ff8fc0 0%,#e94f8d 55%,#c63a74 100%);
+  --cherry-light:#fff3f7; --cherry-dark:#a3265c;
+  --text:#3d2b33; --text-sub:#8a6f7a;
+  --card-bg:#ffffff; --border:#f0d3de; --divider:#f6e4ec;
+  --progress-bg:#fbe4ee;
+  --shadow:0 2px 10px rgba(201,84,132,.10); --shadow-hover:0 6px 18px rgba(201,84,132,.18);
+  --bg:#fff8fb;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,"PingFang SC","Hiragino Sans","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); font-size:14px; line-height:1.5; min-height:100vh;
+}
+/* ---------- header ---------- */
+.header{
+  background:var(--accent-gradient); color:#fff;
+  padding:38px 20px 34px; text-align:center; position:relative; overflow:hidden;
+}
+.header-actions{position:absolute; top:16px; right:16px; z-index:3; display:flex; gap:8px}
+.lang-toggle, .navlink{
+  background:rgba(255,255,255,.22); border:1px solid rgba(255,255,255,.55);
+  color:#fff; font-size:12px; font-weight:600; padding:5px 14px;
+  border-radius:99px; cursor:pointer; transition:background .2s; text-decoration:none; display:inline-block;
+}
+.lang-toggle:hover, .navlink:hover{background:rgba(255,255,255,.38)}
+.header h1{font-size:26px; font-weight:800; letter-spacing:.5px; text-shadow:0 2px 6px rgba(0,0,0,.12)}
+.header .sub{margin-top:8px; font-size:13px; opacity:.95}
+.header .sub small{display:block; margin-top:6px; font-size:11px; opacity:.82}
+/* ---------- stats ---------- */
+.stats{display:flex; justify-content:center; margin-top:-22px; position:relative; z-index:2; padding:0 12px}
+.stat-card{
+  width:360px; max-width:100%; background:var(--card-bg); border-radius:14px;
+  padding:16px 18px; box-shadow:var(--shadow); border:1px solid var(--border); text-align:center;
+}
+.stat-label{font-size:12px; color:var(--text-sub)}
+.stat-num{font-size:30px; font-weight:800; color:var(--accent-dark); margin:2px 0 8px}
+.stat-num .small{font-size:15px; font-weight:700}
+.stat-bar-track{height:8px; background:var(--progress-bg); border-radius:99px; overflow:hidden}
+.stat-bar-fill{height:100%; background:var(--accent-gradient); border-radius:99px; transition:width .5s ease}
+.stat-pct{margin-top:6px; font-size:12px; color:var(--text-sub)}
+.cat-chips{display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-top:10px}
+.cat-chip{
+  font-size:10.5px; font-weight:700; padding:2px 9px; border-radius:99px;
+  background:var(--cherry-light); color:var(--cherry-dark); border:1px solid var(--border); white-space:nowrap;
+}
+/* ---------- 悬浮进度条 ---------- */
+#float-progress{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  height:46px; display:flex; align-items:center; gap:10px; padding:0 16px;
+  background:rgba(255,255,255,.94); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border); box-shadow:0 3px 18px rgba(201,84,132,.16);
+  transform:translateY(-102%); opacity:0;
+  transition:transform .42s cubic-bezier(.22,.61,.36,1), opacity .32s ease;
+  pointer-events:none;
+}
+#float-progress.show{transform:translateY(0); opacity:1; pointer-events:auto}
+.fp-icon{font-size:14px; filter:drop-shadow(0 1px 2px rgba(201,84,132,.3))}
+.fp-bar{flex:1; height:12px; background:var(--progress-bg); border-radius:99px; overflow:hidden;
+  box-shadow:inset 0 1px 3px rgba(201,84,132,.14)}
+.fp-bar i{display:block; height:100%; width:0; background:var(--accent-gradient); border-radius:99px;
+  transition:width .6s cubic-bezier(.22,.61,.36,1)}
+.fp-text{font-size:12px; font-weight:800; color:var(--cherry-dark); white-space:nowrap;
+  min-width:96px; text-align:right; letter-spacing:.2px}
+/* ---------- layout ---------- */
+.container{max-width:980px; margin:0 auto; padding:0 14px 40px}
+.toolbar{
+  background:var(--card-bg); border:1px solid var(--border); border-radius:14px;
+  padding:12px 14px; margin-top:18px; display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+  box-shadow:var(--shadow); position:sticky; top:0; z-index:100;
+}
+.toolbar select,.toolbar input{
+  padding:8px 12px; border:1px solid #e0c8d0; border-radius:10px; font-size:13px;
+  outline:none; background:var(--cherry-light); color:var(--text); min-width:110px;
+  appearance:none; -webkit-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%23c63a74' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat; background-position:right 10px center; padding-right:26px;
+}
+.search-box{flex:1 1 180px; min-width:150px; appearance:auto; -webkit-appearance:auto; padding-right:12px}
+.btn{
+  border:none; border-radius:10px; padding:8px 14px; font-size:13px; font-weight:600;
+  cursor:pointer; color:#fff; background:var(--accent-gradient); transition:opacity .2s;
+}
+.btn:hover{opacity:.88}
+.btn.danger{background:linear-gradient(135deg,#f6a6b5,#e0566f)}
+.btn.plain{background:#fff; color:var(--cherry-dark); border:1px solid var(--border)}
+/* ---------- 年份分组 ---------- */
+.cd-group{
+  background:var(--card-bg); border:1px solid var(--border); border-radius:14px;
+  box-shadow:var(--shadow); margin-top:12px; overflow:hidden; transition:box-shadow .2s;
+}
+.cd-group:hover{box-shadow:var(--shadow-hover)}
+.group-head{
+  display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;
+  padding:12px 14px 10px; border-bottom:1px solid var(--divider);
+  background:linear-gradient(180deg,#fffafb,#fff);
+}
+.group-title{font-size:15px; font-weight:800; color:var(--cherry-dark); display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.group-title .ja{font-size:12px; font-weight:600; color:var(--text-sub)}
+.size-badge{font-size:11px; font-weight:800; padding:2px 10px; border-radius:99px; background:var(--accent-gradient); color:#fff; white-space:nowrap}
+.group-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; padding:12px 14px}
+.cd-card{
+  position:relative; background:var(--cherry-light); border:2px solid transparent; border-radius:12px;
+  padding:8px 8px 6px; cursor:pointer; transition:all .15s; user-select:none;
+}
+.cd-card:hover{border-color:#e8b8c9}
+.cd-card.checked{border-color:var(--accent); background:#fff; box-shadow:0 2px 8px rgba(201,84,132,.14)}
+.cd-card-check{
+  position:absolute; top:4px; right:4px; z-index:2; width:20px; height:20px; border-radius:50%;
+  background:#fff; border:2px solid #d9a8bb; display:flex; align-items:center; justify-content:center;
+  font-size:12px; font-weight:800; color:transparent; transition:all .15s;
+}
+.cd-card.checked .cd-card-check{background:var(--accent-gradient); border-color:var(--accent); color:#fff}
+.cd-card-zoom{
+  position:absolute; top:4px; left:4px; z-index:2; width:20px; height:20px; border-radius:50%;
+  background:rgba(255,255,255,.9); border:1px solid #e0c8d0; display:flex; align-items:center; justify-content:center;
+  font-size:10px; color:var(--cherry-dark); cursor:pointer; opacity:.75; transition:opacity .15s;
+}
+.cd-card-zoom:hover{opacity:1}
+.cd-card-img{
+  height:128px; display:flex; align-items:center; justify-content:center;
+  background:#fff; border-radius:8px; overflow:hidden;
+}
+.cd-card-img img{max-width:100%; max-height:100%; object-fit:contain; transition:transform .15s}
+.cd-card-img img:hover{transform:scale(1.08)}
+.cd-card-name{font-size:12px; font-weight:700; color:var(--text); text-align:center; margin-top:5px; line-height:1.3;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.cd-card.checked .cd-card-name{color:var(--cherry-dark)}
+.cd-card-type{font-size:10px; color:var(--text-sub); text-align:center; margin-top:2px; line-height:1.25;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.cd-card-meta{display:flex; justify-content:space-between; gap:6px; margin-top:4px; font-size:10.5px; color:var(--text-sub)}
+.cd-card-meta .price{font-weight:700; color:var(--cherry-dark)}
+.group-info{
+  display:flex; flex-wrap:wrap; gap:4px 16px; align-items:center;
+  padding:10px 14px; border-top:1px solid var(--divider); background:#fffafb;
+  font-size:12px; color:var(--text-sub);
+}
+.group-info b{color:var(--cherry-dark)}
+.group-progress{margin-left:auto; display:flex; align-items:center; gap:6px; font-weight:600; color:var(--cherry-dark)}
+.group-progress .bar{width:72px; height:6px; border-radius:99px; background:var(--progress-bg); overflow:hidden}
+.group-progress .bar i{display:block; height:100%; background:var(--accent-gradient); transition:width .3s}
+/* ---------- empty / toast / footer ---------- */
+#empty{text-align:center; padding:50px 0; color:var(--text-sub); font-size:14px}
+.footer{background:#fff; border-top:1px solid var(--border); text-align:center; padding:22px 16px 30px; color:var(--text-sub); font-size:12px}
+.footer div{margin-top:5px}
+.footer .fb{font-size:13px; color:var(--cherry-dark); font-weight:700}
+.footer .f-stat{margin-top:10px; font-size:10.5px; color:var(--text-sub)}
+.footer .f-stat #busuanzi_value_site_pv,
+.footer .f-stat #busuanzi_value_site_uv{font-weight:700; color:var(--cherry-dark); font-size:12px; margin:0 2px}
+.toast{
+  position:fixed; left:50%; bottom:30px; transform:translateX(-50%) translateY(20px);
+  background:rgba(61,43,51,.92); color:#fff; padding:9px 18px; border-radius:99px;
+  font-size:13px; opacity:0; pointer-events:none; transition:all .25s; z-index:99;
+}
+.toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
+/* ---------- 详情弹层 ---------- */
+#lightbox{
+  position:fixed; inset:0; background:rgba(20,8,14,.86); z-index:100;
+  display:none; align-items:center; justify-content:center; padding:20px;
+}
+#lightbox.open{display:flex}
+.lb-panel{
+  background:#fff; border-radius:16px; max-width:680px; width:100%; max-height:86vh;
+  overflow:auto; padding:18px 18px 16px; position:relative;
+}
+.lb-close{
+  position:absolute; top:8px; right:12px; color:var(--text-sub); font-size:30px; cursor:pointer;
+  width:40px; height:40px; display:flex; align-items:center; justify-content:center; opacity:.85;
+}
+.lb-close:hover{opacity:1}
+.lb-body{display:flex; gap:16px; flex-wrap:wrap}
+.lb-cover{width:210px; flex:0 0 auto; text-align:center}
+.lb-cover img{width:100%; border-radius:12px; box-shadow:var(--shadow-hover)}
+.lb-info{flex:1 1 260px; min-width:240px}
+.lb-type{font-size:11.5px; font-weight:700; color:#fff; background:var(--accent-gradient);
+  display:inline-block; padding:3px 12px; border-radius:99px; margin-bottom:8px; line-height:1.5}
+.lb-title{font-size:19px; font-weight:800; color:var(--cherry-dark); line-height:1.35}
+.lb-meta{margin-top:10px; font-size:12.5px; color:var(--text-sub); display:flex; flex-wrap:wrap; gap:4px 18px}
+.lb-meta b{color:var(--cherry-dark)}
+.lb-songs{margin-top:12px}
+.lb-songs h4{font-size:12.5px; color:var(--cherry-dark); margin-bottom:6px}
+.lb-songlist{
+  background:var(--cherry-light); border:1px solid var(--border); border-radius:10px;
+  padding:10px 12px; font-size:12px; line-height:1.75; color:var(--text);
+  max-height:220px; overflow:auto; white-space:pre-wrap;
+}
+.lb-actions{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+/* ---------- responsive ---------- */
+@media (max-width:768px){
+  .group-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px}
+  .group-info{gap:4px 12px}
+  .toolbar{flex-wrap:wrap}
+  .toolbar select,.toolbar input{min-width:100px; font-size:12px}
+  .search-box{flex:1 1 120px; min-width:120px}
+}
+@media (max-width:480px){
+  .header h1{font-size:21px}
+  .group-title .ja{display:none}
+  .group-grid{gap:8px; padding:10px}
+  .cd-card{padding:6px 6px 5px}
+  .cd-card-img{height:104px}
+  .cd-card-name{font-size:11px}
+  .group-progress{margin-left:0; width:100%; justify-content:flex-end}
+  .toolbar{gap:8px; padding:10px}
+  .toolbar select,.toolbar input{min-width:90px; font-size:11px; padding:6px 8px}
+  .search-box{flex:1 1 100px; min-width:100px}
+  .lb-cover{width:150px}
+}
+</style>
+</head>
+<body>
+
+<!-- 悬浮进度条：下滑后固定在顶部 -->
+<div id="float-progress" aria-hidden="true">
+  <span class="fp-icon">💿</span>
+  <div class="fp-bar"><i id="fp-fill"></i></div>
+  <span class="fp-text" id="fp-text"></span>
+</div>
+
+<div class="header">
+  <div class="header-actions">
+    <a class="navlink" id="navlink" href="index.html">🧸 趴趴图鉴</a>
+    <button class="lang-toggle" id="lang-toggle">日本語</button>
+  </div>
+  <h1 id="site-title">Love Live! 莲之空CD图鉴</h1>
+  <div class="sub">
+    <span id="site-sub">蓮ノ空女学院スクールアイドルクラブ CD コレクションチェッカー</span>
+    <small id="site-note"></small>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat-card">
+    <div class="stat-label" id="st-lbl-overall">总完成度</div>
+    <div class="stat-num" id="st-overall">0<span class="small">%</span></div>
+    <div class="stat-bar-track"><div class="stat-bar-fill" id="st-overall-bar" style="width:0%"></div></div>
+    <div class="stat-pct" id="st-overall-pct">0 / 0 张</div>
+    <div class="cat-chips" id="cat-chips"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="toolbar">
+    <select id="f-cat"></select>
+    <select id="f-status">
+      <option value="">全部状态</option>
+      <option value="owned">已收藏</option>
+      <option value="unowned">未收藏</option>
+    </select>
+    <input type="text" class="search-box" id="search" placeholder="🔍 搜索标题 / 类型 / 歌曲…">
+    <select id="sort">
+      <option value="asc">📅 发售时间 早→晚</option>
+      <option value="desc">📅 发售时间 晚→早</option>
+    </select>
+    <button class="btn danger" id="btn-reset">🗑️ 清空</button>
+  </div>
+  <div id="item-list"></div>
+  <div id="empty" style="display:none"></div>
+</div>
+
+<div class="footer">
+  <div class="fb" id="footer-brand">Love Live! 莲之空CD图鉴 · 非官方粉丝站</div>
+  <div id="footer-note"></div>
+  <div class="f-stat">
+    <span class="f-stat-label" id="f-stat-pv"></span>
+    <span id="busuanzi_value_site_pv">0</span>
+    <span class="f-stat-unit" id="f-stat-pv-unit"></span>
+    <span class="f-stat-sep">·</span>
+    <span class="f-stat-label" id="f-stat-uv"></span>
+    <span id="busuanzi_value_site_uv">0</span>
+    <span class="f-stat-unit" id="f-stat-uv-unit"></span>
+  </div>
+  <div id="footer-ack"></div>
+  <div id="footer-copy"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div id="lightbox">
+  <div class="lb-panel">
+    <span class="lb-close" id="lb-close">×</span>
+    <div class="lb-body">
+      <div class="lb-cover"><img id="lb-img" src="" alt=""></div>
+      <div class="lb-info">
+        <div class="lb-type" id="lb-type"></div>
+        <div class="lb-title" id="lb-title"></div>
+        <div class="lb-meta">
+          <span id="lb-date"></span>
+          <span id="lb-price"></span>
+        </div>
+        <div class="lb-songs">
+          <h4 id="lb-songs-head"></h4>
+          <div class="lb-songlist" id="lb-songs"></div>
+        </div>
+        <div class="lb-actions">
+          <a class="btn plain" id="lb-link" href="#" target="_blank" rel="noopener"></a>
+          <button class="btn" id="lb-toggle"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+'use strict';
+/*========== 数据（build_cd_page.py 注入） ==========*/
+const CD_DATA = [{"id": "01", "type": "蓮ノ空女学院スクールアイドルクラブ デビューミニアルバム", "title": "Dream Believers", "songs": ["01. Dream Believers", "02. On your mark", "03. 水彩世界", "04. AWOKE", "05. ド！ド！ド！", "06. 永遠のEuphoria"], "date": "2023年3月29日", "sortKey": "2023-03-29", "price": "¥2,420（税込）", "img": "thumbs/cd/01.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/01/"}, {"id": "02", "type": "スリーズブーケ 1stシングル", "title": "Reflection in the mirror", "songs": ["01. Reflection in the mirror", "02. フォーチュンムービー", "03. Mix shake!!", "04. Reflection in the mirror(Off Vocal)", "05. フォーチュンムービー(Off Vocal)", "06. Mix shake!!(Off Vocal)"], "date": "2023年4月26日", "sortKey": "2023-04-26", "price": "¥1,650（税込）", "img": "thumbs/cd/02.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/02/"}, {"id": "03", "type": "DOLLCHESTRA 1stシングル", "title": "Sparkly Spot", "songs": ["01. Sparkly Spot", "02. ツキマカセ", "03. 希望的プリズム", "04. Sparkly Spot(Off Vocal)", "05. ツキマカセ(Off Vocal)", "06. 希望的プリズム(Off Vocal)"], "date": "2023年4月26日", "sortKey": "2023-04-26", "price": "¥1,650（税込）", "img": "thumbs/cd/03.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/03/"}, {"id": "04", "type": "スリーズブーケ＆DOLLCHESTRA ユニットスプリットシングル", "title": "Holiday∞Holiday / Tragic Drops 【スリーズブーケ盤】", "songs": ["01. 謳歌爛漫", "02. スケイプゴート", "03. Holiday∞Holiday", "04. Tragic Drops"], "date": "2023年6月14日", "sortKey": "2023-06-14", "price": "¥1,980（税込）", "img": "thumbs/cd/04.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/04/"}, {"id": "05", "type": "スリーズブーケ＆DOLLCHESTRA ユニットスプリットシングル", "title": "Holiday∞Holiday / Tragic Drops 【DOLLCHESTRA盤】", "songs": ["01. 謳歌爛漫", "02. スケイプゴート", "03. Holiday∞Holiday", "04. Tragic Drops"], "date": "2023年6月14日", "sortKey": "2023-06-14", "price": "¥1,980（税込）", "img": "thumbs/cd/05.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/05/"}, {"id": "06", "type": "スリーズブーケ 2ndシングル", "title": "眩耀夜行", "songs": ["01. DEEPNESS", "02. Kawaii no susume", "03. 眩耀夜行", "04. DEEPNESS(Off Vocal)", "05. Kawaii no susume(Off Vocal)", "06. 眩耀夜行(Off Vocal)"], "date": "2023年8月9日", "sortKey": "2023-08-09", "price": "¥1,650（税込）", "img": "thumbs/cd/06.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/06/"}, {"id": "07", "type": "DOLLCHESTRA 2ndシングル", "title": "Mirage Voyage", "songs": ["01. DEEPNESS", "02. ジブンダイアリー", "03. Mirage Voyage", "04. DEEPNESS(Off Vocal)", "05. ジブンダイアリー(Off Vocal)", "06. Mirage Voyage(Off Vocal)"], "date": "2023年8月9日", "sortKey": "2023-08-09", "price": "¥1,650（税込）", "img": "thumbs/cd/07.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/07/"}, {"id": "08", "type": "蓮ノ空女学院スクールアイドルクラブ 1stアルバム", "title": "夏めきペイン", "songs": ["01. 夏めきペイン", "02. Yup! Yup! Yup!", "03. ココン東西", "04. 残陽", "05. 青春の輪郭", "06. ハクチューアラモード", "07. Dear my future", "08. パラレルダンサー", "09. 明日の空の僕たちへ", "10. Legato"], "date": "2023年9月20日", "sortKey": "2023-09-20", "price": "¥3,080（税込）", "img": "thumbs/cd/08.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/08/"}, {"id": "09", "type": "スリーズブーケ 3rdシングル", "title": "素顔のピクセル", "songs": ["01. 素顔のピクセル", "02. シュガーメルト", "03. 千変万華", "04. 素顔のピクセル(Off Vocal)", "05. シュガーメルト(Off Vocal)", "06. 千変万華(Off Vocal)"], "date": "2023年11月15日", "sortKey": "2023-11-15", "price": "¥1,650（税込）", "img": "thumbs/cd/09.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/09/"}, {"id": "10", "type": "DOLLCHESTRA 3rdシングル", "title": "Take It Over", "songs": ["01. Take It Over", "02. 飴色", "03. KNOT", "04. Take It Over(Off Vocal)", "05. 飴色(Off Vocal)", "06. KNOT(Off Vocal)"], "date": "2023年11月22日", "sortKey": "2023-11-22", "price": "¥1,650（税込）", "img": "thumbs/cd/10.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/10/"}, {"id": "11", "type": "みらくらぱーく！ 1stシングル", "title": "アイデンティティ", "songs": ["01. アイデンティティ", "02. 天才なのかもしれない", "03. ノンフィクションヒーローショー", "04. アイデンティティ(Off Vocal)", "05. 天才なのかもしれない(Off Vocal)", "06. ノンフィクションヒーローショー(Off Vocal)"], "date": "2023年11月29日", "sortKey": "2023-11-29", "price": "¥1,650（税込）", "img": "thumbs/cd/11.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/11/"}, {"id": "12", "type": "蓮ノ空女学院スクールアイドルクラブ 1stシングル", "title": "Link to the FUTURE", "songs": ["01. Trick ＆ Cute", "02. ツバサ・ラ・リベルテ", "03. Link to the FUTURE", "04. Trick ＆ Cute(Off Vocal)", "05. ツバサ・ラ・リベルテ(Off Vocal)", "06. Link to the FUTURE(Off Vocal)"], "date": "2024年1月17日", "sortKey": "2024-01-17", "price": "¥1,650（税込）", "img": "thumbs/cd/12.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/12/"}, {"id": "13", "type": "スリーズブーケ＆DOLLCHESTRA＆みらくらぱーく！ ユニットスプリットシングル", "title": "Special Thanks / 青とシャボン / ミルク", "songs": ["01. Special Thanks", "02. 青とシャボン", "03. ミルク", "04. Special Thanks(Off Vocal)", "05. 青とシャボン(Off Vocal)", "06. ミルク(Off Vocal)"], "date": "2024年2月14日", "sortKey": "2024-02-14", "price": "¥1,650（税込）", "img": "thumbs/cd/13.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/13/"}, {"id": "14", "type": "るりのとゆかいなつづりたち＆かほめぐ♡じぇらーと＆蓮ノ休日 シャッフルユニットスプリットシングル", "title": "Colorfulness / ハッピー至上主義！ / Pleasure Feather", "songs": ["01. Colorfulness", "02. ハッピー至上主義！", "03. Pleasure Feather", "04. Colorfulness(Off Vocal)", "05. ハッピー至上主義！(Off Vocal)", "06. Pleasure Feather(Off Vocal)"], "date": "2024年3月20日", "sortKey": "2024-03-20", "price": "¥1,650（税込）", "img": "thumbs/cd/14.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/14/"}, {"id": "15", "type": "みらくらぱーく！ 2ndシングル", "title": "以心☆電信", "songs": ["01. 以心☆電信", "02. BANG YOU グラビティ", "03. マハラジャンボリー", "04. 以心☆電信(Off Vocal)", "05. BANG YOU グラビティ(Off Vocal)", "06. マハラジャンボリー(Off Vocal)"], "date": "2024年3月27日", "sortKey": "2024-03-27", "price": "¥1,650（税込）", "img": "thumbs/cd/15.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/15/"}, {"id": "16", "type": "蓮ノ空女学院スクールアイドルクラブ 2ndシングル", "title": "抱きしめる花びら", "songs": ["01. 抱きしめる花びら", "02. STEP UP !", "03. 抱きしめる花びら(Off Vocal)", "04. STEP UP !(Off Vocal)"], "date": "2024年4月3日", "sortKey": "2024-04-03", "price": "¥1,430（税込）", "img": "thumbs/cd/16.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/16/"}, {"id": "17", "type": "蓮ノ空女学院スクールアイドルクラブ 2ndミニアルバム", "title": "Dream Believers (104期 Ver.)", "songs": ["01. Dream Believers (104期 Ver.)", "02. On your mark (104期 Ver.)", "03. アオクハルカ", "04. レディバグ", "05. みらくりえーしょん", "06. 永遠のEuphoria (104期 Ver.)"], "date": "2024年4月17日", "sortKey": "2024-04-17", "price": "¥2,420（税込）", "img": "thumbs/cd/17.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/17/"}, {"id": "18", "type": "蓮ノ空女学院スクールアイドルクラブ 3rdシングル", "title": "Bloom the smile, Bloom the dream!", "songs": ["01. Bloom the smile, Bloom the dream!", "02. 365 Days", "03. Bloom the smile, Bloom the dream!（Off Vocal）", "04. 365 Days（Off Vocal）"], "date": "2024年7月17日", "sortKey": "2024-07-17", "price": "¥1,430（税込）", "img": "thumbs/cd/18.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/18/"}, {"id": "19", "type": "スリーズブーケ 4thシングル", "title": "月夜見海月", "songs": ["01. 月夜見海月", "02. Reflection in the mirror（104期NEW Ver.）", "03. 月夜見海月（Off Vocal）", "04. Reflection in the mirror（104期NEW Ver.）（Off Vocal）"], "date": "2024年9月4日", "sortKey": "2024-09-04", "price": "¥1,430（税込）", "img": "thumbs/cd/19.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/19/"}, {"id": "20", "type": "DOLLCHESTRA 4thシングル", "title": "Proof", "songs": ["01. Proof", "02. Sparkly Spot（104期NEW Ver.）", "03. Proof（Off Vocal）", "04. Sparkly Spot（104期NEW Ver.）（Off Vocal）"], "date": "2024年9月11日", "sortKey": "2024-09-11", "price": "¥1,430（税込）", "img": "thumbs/cd/20.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/20/"}, {"id": "22", "type": "「LoveLive! Series Asia Tour 2024 ～みんなで叶える物語～」 テーマソングCD", "title": "「Bring the LOVE！」", "songs": ["01. Bring the LOVE！", "02. Bring the LOVE！(Off Vocal)"], "date": "2024年9月20日", "sortKey": "2024-09-20", "price": "¥1,430（税込）", "img": "thumbs/cd/22.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/22/"}, {"id": "21", "type": "みらくらぱーく！ 3rdシングル", "title": "ファンファーレ！！！", "songs": ["01. ファンファーレ！！！", "02. アイデンティティ（104期NEW Ver.）", "03. ファンファーレ！！！（Off Vocal）", "04. アイデンティティ（104期NEW Ver.）（Off Vocal）"], "date": "2024年10月2日", "sortKey": "2024-10-02", "price": "¥1,430（税込）", "img": "thumbs/cd/21.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/21/"}, {"id": "25", "type": "スリーズブーケ＆DOLLCHESTRA＆みらくらぱーく！ 2ndユニットスプリットシングル", "title": "ハナムスビ / バアドケージ / ジョーショーキリュー", "songs": ["01. ハナムスビ", "02. バアドケージ", "03. ジョーショーキリュー", "04. ハナムスビ（Off Vocal）", "05. バアドケージ（Off Vocal）", "06. ジョーショーキリュー（Off Vocal）"], "date": "2024年12月4日", "sortKey": "2024-12-04", "price": "¥1,650（税込）", "img": "thumbs/cd/25.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/25/"}, {"id": "26", "type": "蓮ノ空女学院スクールアイドルクラブ 4thシングル", "title": "KEY of Like！", "songs": ["01. KEY of Like！", "02. Now or Never", "03. KEY of Like！（Off Vocal）", "04. Now or Never（Off Vocal）"], "date": "2025年2月5日", "sortKey": "2025-02-05", "price": "¥1,430（税込）", "img": "thumbs/cd/26.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/26/"}, {"id": "30", "type": "蓮ノ空女学院スクールアイドルクラブ 5thシングル", "title": "AURORA FLOWER", "songs": ["01. AURORA FLOWER", "02. ゲッカビジン", "03. AURORA FLOWER(Off Vocal)", "04. ゲッカビジン(Off Vocal)"], "date": "2025年2月26日", "sortKey": "2025-02-26", "price": "¥1,430（税込）", "img": "thumbs/cd/30.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/30/"}, {"id": "27", "type": "スリーズブーケ 5thシングル", "title": "ユメワズライ", "songs": ["01. ユメワズライ", "02. Chu! Chocolate", "03. ユメワズライ（Off Vocal）", "04. Chu! Chocolate（Off Vocal）"], "date": "2025年3月19日", "sortKey": "2025-03-19", "price": "¥1,430（税込）", "img": "thumbs/cd/27.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/27/"}, {"id": "28", "type": "DOLLCHESTRA 5thシングル", "title": "COMPASS", "songs": ["01. COMPASS", "02. レム", "03. COMPASS（Off Vocal）", "04. レム（Off Vocal）"], "date": "2025年3月19日", "sortKey": "2025-03-19", "price": "¥1,430（税込）", "img": "thumbs/cd/28.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/28/"}, {"id": "29", "type": "みらくらぱーく！ 4thシングル", "title": "全方位キュン♡", "songs": ["01. 全方位キュン♡", "02. かくれんぼしよう", "03. 全方位キュン♡（Off Vocal）", "04. かくれんぼしよう（Off Vocal）"], "date": "2025年3月19日", "sortKey": "2025-03-19", "price": "¥1,430（税込）", "img": "thumbs/cd/29.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/29/"}, {"id": "31", "type": "蓮ノ空女学院スクールアイドルクラブ SPECIALアルバム", "title": "おいでよ！石川大観光", "songs": ["01. おいでよ！石川大観光", "02. 恋景色昭和ロマン", "03. ベジ・ラブ・ルー", "04. マハラジャンボリーⅡ", "05. 恥は人生のかきすて", "06. Love it! Wonderful Trip!", "07. アステリズム"], "date": "2025年3月26日", "sortKey": "2025-03-26", "price": "¥2,860（税込）", "img": "thumbs/cd/31.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/31/"}, {"id": "32", "type": "蓮ノ空女学院スクールアイドルクラブ 6thシングル", "title": "いつでも、いつまでも", "songs": ["01. いつでも、いつまでも", "02. いったん", "03. いつでも、いつまでも(Off Vocal)", "04. いったん(Off Vocal)"], "date": "2025年4月9日", "sortKey": "2025-04-09", "price": "¥1,430（税込）", "img": "thumbs/cd/32.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/32/"}, {"id": "34", "type": "蓮ノ空女学院スクールアイドルクラブ 3rdミニアルバム", "title": "Dream Believers（105期Ver.）", "songs": ["01. Dream Believers（105期Ver.）", "02. Celebration!", "03. アンペア", "04. WAWO!", "05. Edelied", "06. Hello, new dream!"], "date": "2025年4月30日", "sortKey": "2025-04-30", "price": "¥2,420（税込）", "img": "thumbs/cd/34.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/34/"}, {"id": "36", "type": "Edel Note 1stシングル", "title": "「Retrofuture」", "songs": ["01. Retrofuture", "02. 天地黎明", "03. チリコンカン", "04. Retrofutur（Off Vocal）", "05. 天地黎明（Off Vocal）", "06. チリコンカン（Off Vocal）"], "date": "2025年5月21日", "sortKey": "2025-05-21", "price": "¥1,650（税込）", "img": "thumbs/cd/36.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/36/"}, {"id": "01_4733", "type": "蓮ノ空女学院スクールアイドルクラブ 102nd Graduation Album", "title": "～Star Sign Memories～ Otomune Kozue【初回限定盤】", "songs": ["01. 水彩世界", "02. 謳歌爛漫", "03. Reflection in the mirror", "04. Holiday∞Holiday", "05. 眩耀夜行", "06. 素顔のピクセル", "07. 千変万華", "08. Special Thanks", "01. アオクハルカ", "02. 月夜見海月", "03. ハナムスビ", "04. ユメワズライ", "05. 明日の空の僕たちへ", "06. DEEPNESS", "07. Dream Believers（SAKURA Ver.）", "08. be proud"], "date": "2025年6月4日", "sortKey": "2025-06-04", "price": "¥4,950（税込）", "img": "thumbs/cd/01_4733.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4733"}, {"id": "01_4734", "type": "蓮ノ空女学院スクールアイドルクラブ 102nd Graduation Album", "title": "～Star Sign Memories～ Otomune Kozue【通常盤】", "songs": ["01. 水彩世界", "02. 謳歌爛漫", "03. Reflection in the mirror", "04. Holiday∞Holiday", "05. 眩耀夜行", "06. 素顔のピクセル", "07. 千変万華", "08. Special Thanks", "01. アオクハルカ", "02. 月夜見海月", "03. ハナムスビ", "04. ユメワズライ", "05. 明日の空の僕たちへ", "06. DEEPNESS", "07. Dream Believers（SAKURA Ver.）", "08. be proud"], "date": "2025年6月4日", "sortKey": "2025-06-04", "price": "¥3,300（税込）", "img": "thumbs/cd/01_4734.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4734"}, {"id": "01_4735", "type": "蓮ノ空女学院スクールアイドルクラブ 102nd Graduation Album", "title": "～Star Sign Memories～ Yugiri Tsuzuri【初回限定盤】", "songs": ["01. AWOKE", "02. スケイプゴート", "03. Sparkly Spot", "04. Tragic Drops", "05. Mirage Voyage", "06. Take It Over", "07. KNOT", "08. 青とシャボン", "01. レディバグ", "02. Proof", "03. バアドケージ", "04. COMPASS", "05. ツバサ・ラ・リベルテ", "06. DEEPNESS", "07. Dream Believers（SAKURA Ver.）", "08. 幸せのリボン"], "date": "2025年6月4日", "sortKey": "2025-06-04", "price": "¥4,950（税込）", "img": "thumbs/cd/01_4735.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4735"}, {"id": "01_4736", "type": "蓮ノ空女学院スクールアイドルクラブ 102nd Graduation Album", "title": "～Star Sign Memories～ Yugiri Tsuzuri【通常盤】", "songs": ["01. AWOKE", "02. スケイプゴート", "03. Sparkly Spot", "04. Tragic Drops", "05. Mirage Voyage", "06. Take It Over", "07. KNOT", "08. 青とシャボン", "01. レディバグ", "02. Proof", "03. バアドケージ", "04. COMPASS", "05. ツバサ・ラ・リベルテ", "06. DEEPNESS", "07. Dream Believers（SAKURA Ver.）", "08. 幸せのリボン"], "date": "2025年6月4日", "sortKey": "2025-06-04", "price": "¥3,300（税込）", "img": "thumbs/cd/01_4736.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4736"}, {"id": "01_4737", "type": "蓮ノ空女学院スクールアイドルクラブ 102nd Graduation Album", "title": "～Star Sign Memories～ Fujishima Megumi【初回限定盤】", "songs": ["01. ド！ド！ド！", "02. ハクチューアラモード", "03. ココン東西", "04. アイデンティティ", "05. ノンフィクションヒーローショー", "06. ミルク", "07. 以心☆電信", "08. BANG YOU グラビティ", "01. みらくりえーしょん", "02. ファンファーレ！！！", "03. ジョーショーキリュー", "04. 全方位キュン♡", "05. 夏めきペイン", "06. DEEPNESS", "07. Dream Believers（SAKURA Ver.）", "08. やっぱ天使！"], "date": "2025年6月4日", "sortKey": "2025-06-04", "price": "¥4,950（税込）", "img": "thumbs/cd/01_4737.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4737"}, {"id": "01_4738", "type": "蓮ノ空女学院スクールアイドルクラブ 102nd Graduation Album", "title": "～Star Sign Memories～ Fujishima Megumi【通常盤】", "songs": ["01. ド！ド！ド！", "02. ハクチューアラモード", "03. ココン東西", "04. アイデンティティ", "05. ノンフィクションヒーローショー", "06. ミルク", "07. 以心☆電信", "08. BANG YOU グラビティ", "01. みらくりえーしょん", "02. ファンファーレ！！！", "03. ジョーショーキリュー", "04. 全方位キュン♡", "05. 夏めきペイン", "06. DEEPNESS", "07. Dream Believers（SAKURA Ver.）", "08. やっぱ天使！"], "date": "2025年6月4日", "sortKey": "2025-06-04", "price": "¥3,300（税込）", "img": "thumbs/cd/01_4738.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4738"}, {"id": "01_4739", "type": "蓮ノ空女学院スクールアイドルクラブ ユニットスプリットシングル", "title": "37.5℃のファンタジー / アイマイメーデー / BLAST!! / 十六夜セレーネ", "songs": ["01. 37.5℃のファンタジー", "02. アイマイメーデー", "03. BLAST!!", "04. 十六夜セレーネ", "05. 37.5℃のファンタジー（Off Vocal）", "06. アイマイメーデー（Off Vocal）", "07. BLAST!! （Off Vocal）", "08. 十六夜セレーネ（Off Vocal）"], "date": "2025年7月2日", "sortKey": "2025-07-02", "price": "¥1,980（税込）", "img": "thumbs/cd/01_4739.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4739"}, {"id": "01_4740", "type": "蓮ノ空女学院スクールアイドルクラブ 7thシングル", "title": "アイドゥーミー！", "songs": ["01. アイドゥーミー！", "02. とーひょー☆スター！", "03. アイドゥーミー！（Off Vocal）", "04. とーひょー☆スター！（Off Vocal）"], "date": "2025年7月9日", "sortKey": "2025-07-09", "price": "¥1,430（税込）", "img": "thumbs/cd/01_4740.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4740"}, {"id": "01_4741", "type": "スリーズブーケ 6thシングル", "title": "フルーツパンチ", "songs": ["01. フルーツパンチ", "02. My Lucky Clover", "03. フルーツパンチ（Off Vocal）", "04. My Lucky Clover（Off Vocal）"], "date": "2025年8月20日", "sortKey": "2025-08-20", "price": "¥1,430（税込）", "img": "thumbs/cd/01_4741.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4741"}, {"id": "01_4742", "type": "DOLLCHESTRA 6thシングル", "title": "太陽であれ！", "songs": ["01. 太陽であれ！", "02. diamondz", "03. 太陽であれ！（Off Vocal）", "04. diamondz（Off Vocal）"], "date": "2025年8月20日", "sortKey": "2025-08-20", "price": "¥1,430（税込）", "img": "thumbs/cd/01_4742.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4742"}, {"id": "01_4850", "type": "蓮ノ空女学院スクールアイドルクラブ 2ndユニットスプリットシングル", "title": "可惜夜花火 / ブルウモーメント / Very! Very! COCO夏っ / フュージョンクラスト", "songs": ["01. 可惜夜花火", "02. ブルウモーメント", "03. Very! Very! COCO夏っ", "04. フュージョンクラスト", "05. 可惜夜花火（Off Vocal）", "06. ブルウモーメント（Off Vocal）", "07. Very! Very! COCO夏っ（Off Vocal）", "08. フュージョンクラスト（Off Vocal）"], "date": "2025年9月3日", "sortKey": "2025-09-03", "price": "¥1,980（税込）", "img": "thumbs/cd/01_4850.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4850"}, {"id": "01_4976", "type": "Edel Note 2ndシングル", "title": "「片翼のトリバガ」", "songs": ["01. 片翼のトリバガ", "02. ドライブ・スペード・クレイジー", "03. 片翼のトリバガ（Off Vocal）", "04. ドライブ・スペード・クレイジー（Off Vocal）"], "date": "2025年10月1日", "sortKey": "2025-10-01", "price": "¥1,430（税込）", "img": "thumbs/cd/01_4976.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4976"}, {"id": "01_4980", "type": "みらくらぱーく！ 5thシングル", "title": "ニャオシグニャル", "songs": ["01. ニャオシグニャル", "02. ハートにＱ", "03. ニャオシグニャル（Off Vocal）", "04. ハートにＱ（Off Vocal）"], "date": "2025年10月1日", "sortKey": "2025-10-01", "price": "¥1,430（税込）", "img": "thumbs/cd/01_4980.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_4980"}, {"id": "01_5237", "type": "蓮ノ空女学院スクールアイドルクラブ シャッフルユニットスプリットシングル", "title": "ちょ、尊いLOVE / Nεw Black", "songs": ["01. ちょ、尊いLOVE", "02. 平成ギャルズ!!!!", "03. Nεw Black", "04. IcHiGo milK love", "05. ちょ、尊いLOVE（Off Vocal）", "06. 平成ギャルズ!!!!（Off Vocal）", "07. Nεw Black（Off Vocal）", "08. IcHiGo milK love（Off Vocal）"], "date": "2025年12月3日", "sortKey": "2025-12-03", "price": "¥1,980（税込）", "img": "thumbs/cd/01_5237.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5237"}, {"id": "01_5238", "type": "蓮ノ空女学院スクールアイドルクラブ 3rdユニットスプリットシングル", "title": "乙女詞華集 / ガランドFlash / バイタルサイン / シアター生き様", "songs": ["01. 乙女詞華集", "02. ガランドFlash", "03. バイタルサイン", "04. シアター生き様", "05. 乙女詞華集（Off Vocal）", "06. ガランドFlash（Off Vocal）", "07. バイタルサイン（Off Vocal）", "08. シアター生き様（Off Vocal）"], "date": "2025年12月10日", "sortKey": "2025-12-10", "price": "¥1,980（税込）", "img": "thumbs/cd/01_5238.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5238"}, {"id": "01_5233", "type": "蓮ノ空女学院スクールアイドルクラブ 8thシングル", "title": "はじまりの羽音", "songs": ["01. はじまりの羽音", "02. チャーミングな花束を！", "03. Runway", "04. はじまりの羽音（Off Vocal）", "05. チャーミングな花束を！（Off Vocal）", "06. Runway （Off Vocal）"], "date": "2025年12月24日", "sortKey": "2025-12-24", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5233.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5233"}, {"id": "01_5258", "type": "ラブライブ！シリーズ15周年記念企画", "title": "LoveLive! Series 15th Anniversary Tribute Album", "songs": ["01. 決めたよHand in Hand（オリジナル：『ラブライブ！サンシャイン!!』高海千歌、桜内梨子、渡辺 曜）", "02. 僕らは今のなかで（オリジナル：『ラブライブ！』μ's）", "03. Dream Believers（オリジナル：『ラブライブ！蓮ノ空女学院スクールアイドルクラブ』蓮ノ空女学院スクールアイドルクラブ）", "04. キラーキューン☆（オリジナル：『ラブライブ！スーパースター!!』Liella!）", "05. soldier game（オリジナル：『ラブライブ！』西木野真姫、園田海未、絢瀬絵里）", "06. 酸欠（オリジナル：『ラブライブ！虹ヶ咲学園スクールアイドル同好会』三船栞子）", "07. フォーチュンムービー（オリジナル：『ラブライブ！蓮ノ空女学院スクールアイドルクラブ』スリーズブーケ）", "08. Landing action Yeah!!（オリジナル：『ラブライブ！サンシャイン!!』Aqours）", "09. Fly with You!!（オリジナル：『ラブライブ！虹ヶ咲学園スクールアイドル同好会』虹ヶ咲学園スクールアイドル同好会）", "10. KiRa-KiRa Sensation!（オリジナル：『ラブライブ！』μ's）", "11. START!! True dreams（オリジナル：『ラブライブ！スーパースター!!』Liella!）"], "date": "2026年1月14日", "sortKey": "2026-01-14", "price": "¥4,400（税込）", "img": "thumbs/cd/01_5258.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5258"}, {"id": "01_5505", "type": "蓮ノ空女学院スクールアイドルクラブ 9thシングル", "title": "Echoes Beyond", "songs": ["01. Echoes Beyond", "02. JOKER.", "03. Echoes Beyond（Off Vocal）", "04. JOKER.（Off Vocal）"], "date": "2026年1月28日", "sortKey": "2026-01-28", "price": "¥1,300（税込）", "img": "thumbs/cd/01_5505.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5505"}, {"id": "01_5506", "type": "蓮ノ空女学院スクールアイドルクラブ 4thユニットスプリットシングル", "title": "Sayo-Shigure / リブウト / Hip, hip, hooray! / 令嬢モブ！", "songs": ["01. Sayo-Shigure", "02. リブウト", "03. Hip, hip, hooray!", "04. 令嬢モブ！", "05. Sayo-Shigure（Off Vocal）", "06. リブウト（Off Vocal）", "07. Hip, hip, hooray!（Off Vocal）", "08. 令嬢モブ！（Off Vocal）"], "date": "2026年2月18日", "sortKey": "2026-02-18", "price": "¥1,980（税込）", "img": "thumbs/cd/01_5506.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5506"}, {"id": "01_5636", "type": "スリーズブーケ 7thシングル", "title": "不思議と君とライブラリー", "songs": ["01. 不思議と君とライブラリー", "02. 不思議と君とライブラリー（B. G. P. Ver.）", "03. 金沢片恋慕", "04. 不思議と君とライブラリー（Off Vocal）", "05. 金沢片恋慕（Off Vocal）"], "date": "2026年4月8日", "sortKey": "2026-04-08", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5636.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5636"}, {"id": "01_5683", "type": "DOLLCHESTRA 7thシングル", "title": "アイシイ", "songs": ["01. アイシイ", "02. アイシイ（B. G. P. Ver.）", "03. アンブレラ", "04. アイシイ（Off Vocal）", "05. アンブレラ（Off Vocal）"], "date": "2026年4月8日", "sortKey": "2026-04-08", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5683.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5683"}, {"id": "01_5684", "type": "みらくらぱーく！ 6thシングル", "title": "トモダチになれる場所", "songs": ["01. トモダチになれる場所", "02. トモダチになれる場所（B. G. P. Ver.）", "03. センパイ", "04. トモダチになれる場所（Off Vocal）", "05. センパイ（Off Vocal）"], "date": "2026年4月8日", "sortKey": "2026-04-08", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5684.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5684"}, {"id": "01_5685", "type": "Edel Note 3rdシングル", "title": "EdelinieN", "songs": ["01. EdelinieN", "02. ミアモーレ・ミーアキャット", "03. A出るノート", "04. EdelinieN（Off Vocal）", "05. ミアモーレ・ミーアキャット（Off Vocal）", "06. A出るノート（Off Vocal）"], "date": "2026年4月8日", "sortKey": "2026-04-08", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5685.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5685"}, {"id": "01_5686", "type": "蓮ノ空女学院スクールアイドルクラブ 10thシングル", "title": "今、過去、未来の三原色", "songs": ["01. 一生に夢が咲くように", "02. 雪舞う空と二秒の永遠", "03. 今、過去、未来の三原色", "04. 一生に夢が咲くように（Off Vocal）", "05. 雪舞う空と二秒の永遠（Off Vocal）", "06. 今、過去、未来の三原色（Off Vocal）"], "date": "2026年4月15日", "sortKey": "2026-04-15", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5686.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5686"}, {"id": "01_5904", "type": "『ラブライブ！シリーズ オフィシャルカードゲーム』テーマソング", "title": "AiScReam「NEXT CARD」", "songs": ["01. NEXT CARD（『ラブライブ！シリーズ オフィシャルカードゲーム』テーマソング）", "02. NEXT CARD（Off Vocal）"], "date": "2026年5月23日", "sortKey": "2026-05-23", "price": "未公布", "img": "thumbs/cd/01_5904.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5904"}, {"id": "01_5950", "type": "『映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party』 挿入歌シングル", "title": "「ハナ咲けばユメ駆ける / 光の中で花咲いて」【ハナ咲けばユメ駆ける盤】", "songs": ["01. ハナ咲けばユメ駆ける", "02. 光の中で花咲いて", "03. Dream Believers（B. G. P. Ver.）", "04. ハナ咲けばユメ駆ける（Off Vocal）", "05. 光の中で花咲いて（Off Vocal）", "06. Dream Believers（Off Vocal）"], "date": "2026年6月3日", "sortKey": "2026-06-03", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5950.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5950"}, {"id": "01_5951", "type": "『映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party』 挿入歌シングル", "title": "「ハナ咲けばユメ駆ける / 光の中で花咲いて」【光の中で花咲いて盤】", "songs": ["01. ハナ咲けばユメ駆ける", "02. 光の中で花咲いて", "03. Dream Believers（B. G. P. Ver.）", "04. ハナ咲けばユメ駆ける（Off Vocal）", "05. 光の中で花咲いて（Off Vocal）", "06. Dream Believers（Off Vocal）"], "date": "2026年6月3日", "sortKey": "2026-06-03", "price": "¥1,650（税込）", "img": "thumbs/cd/01_5951.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_5951"}, {"id": "01_6066", "type": "蓮ノ空女学院スクールアイドルクラブ 103rd Graduation Album", "title": "～Full Bloom Memories～ Hinoshita Kaho【初回限定盤】", "songs": ["01. 水彩世界", "02. 謳歌爛漫", "03. Reflection in the mirror", "04. Holiday∞Holiday", "05. 眩耀夜行", "06. 素顔のピクセル", "07. 千変万華", "08. Special Thanks", "01. アオクハルカ", "02. 月夜見海月", "03. ハナムスビ", "04. ユメワズライ", "05. Celebration!", "06. フルーツパンチ", "07. 乙女詞華集", "08. 不思議と君とライブラリー", "09. 今、過去、未来の三原色", "10. アイドゥーミー！", "11. Dream Believers（SAKURA Ver.）", "12. プレイリスト/「あの日」"], "date": "2026年7月1日", "sortKey": "2026-07-01", "price": "¥5,500（税込）", "img": "thumbs/cd/01_6066.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6066"}, {"id": "01_6067", "type": "蓮ノ空女学院スクールアイドルクラブ 103rd Graduation Album", "title": "～Full Bloom Memories～ Hinoshita Kaho【通常盤】", "songs": ["01. 水彩世界", "02. 謳歌爛漫", "03. Reflection in the mirror", "04. Holiday∞Holiday", "05. 眩耀夜行", "06. 素顔のピクセル", "07. 千変万華", "08. Special Thanks", "01. アオクハルカ", "02. 月夜見海月", "03. ハナムスビ", "04. ユメワズライ", "05. Celebration!", "06. フルーツパンチ", "07. 乙女詞華集", "08. 不思議と君とライブラリー", "09. 今、過去、未来の三原色", "10. アイドゥーミー！", "11. Dream Believers（SAKURA Ver.）", "12. プレイリスト/「あの日」"], "date": "2026年7月1日", "sortKey": "2026-07-01", "price": "¥3,850（税込）", "img": "thumbs/cd/01_6067.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6067"}, {"id": "01_6068", "type": "蓮ノ空女学院スクールアイドルクラブ 103rd Graduation Album", "title": "～Full Bloom Memories～ Murano Sayaka【初回限定盤】", "songs": ["01. AWOKE", "02. スケイプゴート", "03. Sparkly Spot", "04. Tragic Drops", "05. Mirage Voyage", "06. Take It Over", "07. KNOT", "08. 青とシャボン", "02. Proof", "03. バアドケージ", "04. COMPASS", "05. アンペア", "06. アイマイメーデー", "07. 太陽であれ！", "08. アイシイ", "09. はじまりの羽音", "10. アイドゥーミー！", "11. Dream Believers（SAKURA Ver.）", "12. Bless you!"], "date": "2026年7月1日", "sortKey": "2026-07-01", "price": "¥5,500（税込）", "img": "thumbs/cd/01_6068.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6068"}, {"id": "01_6069", "type": "蓮ノ空女学院スクールアイドルクラブ 103rd Graduation Album", "title": "～Full Bloom Memories～ Murano Sayaka【通常盤】", "songs": ["01. AWOKE", "02. スケイプゴート", "03. Sparkly Spot", "04. Tragic Drops", "05. Mirage Voyage", "06. Take It Over", "07. KNOT", "08. 青とシャボン", "01. レディバグ", "02. Proof", "03. バアドケージ", "04. COMPASS", "05. アンペア", "06. アイマイメーデー", "07. 太陽であれ！", "08. アイシイ", "09. はじまりの羽音", "10. アイドゥーミー！", "11. Dream Believers（SAKURA Ver.）", "12. Bless you!"], "date": "2026年7月1日", "sortKey": "2026-07-01", "price": "¥3,850（税込）", "img": "thumbs/cd/01_6069.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6069"}, {"id": "01_6070", "type": "蓮ノ空女学院スクールアイドルクラブ 103rd Graduation Album", "title": "～Full Bloom Memories～ Osawa Rurino【初回限定盤】", "songs": ["01. ド！ド！ド！", "02. ハクチューアラモード", "03. ココン東西", "04. アイデンティティ", "05. ノンフィクションヒーローショー", "06. ミルク", "07. 以心☆電信", "08. BANG YOU グラビティ", "01. みらくりえーしょん", "02. ファンファーレ！！！", "03. ジョーショーキリュー", "04. 全方位キュン♡", "05. WAWO!", "06. BLAST!!", "07. ニャオシグニャル", "08. トモダチになれる場所", "09. Echoes Beyond", "10. アイドゥーミー！", "11. Dream Believers（SAKURA Ver.）", "12. ミジンコトランスフォーメーション"], "date": "2026年7月1日", "sortKey": "2026-07-01", "price": "¥5,500（税込）", "img": "thumbs/cd/01_6070.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6070"}, {"id": "01_6071", "type": "蓮ノ空女学院スクールアイドルクラブ 103rd Graduation Album", "title": "～Full Bloom Memories～ Osawa Rurino【通常盤】", "songs": ["01. ド！ド！ド！", "02. ハクチューアラモード", "03. ココン東西", "04. アイデンティティ", "05. ノンフィクションヒーローショー", "06. ミルク", "07. 以心☆電信", "08. BANG YOU グラビティ", "01. みらくりえーしょん", "02. ファンファーレ！！！", "03. ジョーショーキリュー", "04. 全方位キュン♡", "05. WAWO!", "06. BLAST!!", "07. ニャオシグニャル", "08. トモダチになれる場所", "09. Echoes Beyond", "10. アイドゥーミー！", "11. Dream Believers（SAKURA Ver.）", "12. ミジンコトランスフォーメーション"], "date": "2026年7月1日", "sortKey": "2026-07-01", "price": "¥3,850（税込）", "img": "thumbs/cd/01_6071.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6071"}, {"id": "01_6148", "type": "『映画 ラブライブ！蓮ノ空女学院スクールアイドルクラブ Bloom Garden Party』オリジナルサウンドトラック", "title": "「Petals of History」", "songs": ["01. 録画開始！", "02. 登る先には…", "03. 繋がりの風吹く坂", "04. にぎやかな予感", "05. いつかまた、みんなで", "06. 鼓動の向こうへ", "07. 待ち望んでいた時間", "08. 笑顔の種蒔き", "09. さくらんぼ色の花束", "10. 笑顔の天才が実るまで", "11. みらくらパフォーマー", "12. それでも前へ", "13. 騎士と姫の戯れ", "14. 変わりたい？", "15. 夕焼けに溶ける声", "16. きっと、ここから", "17. 花びらは覚えてる", "18. 見つけた！", "19. 心動かすリズム", "20. 三華終律", "21. 泣いてもいい夜だから", "22. 君へ、咲き継ぐ", "23. 光の中で花咲いて（Short Ver.）"], "date": "2026年7月22日", "sortKey": "2026-07-22", "price": "¥3,300（税込）", "img": "thumbs/cd/01_6148.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6148"}, {"id": "01_6396", "type": "蓮ノ空女学院スクールアイドルクラブ 2nd SPECIALアルバム", "title": "おいでよ！石川大観光Ⅱ", "songs": ["01. おいでよ！石川大観光Ⅱ", "02. ぱやっぱ♪リズミックハート", "03. 女王の椅子", "04. 全部、春風になった", "05. 繋いだ今日の僕たちより", "06. ペレニアル"], "date": "2026年9月21日", "sortKey": "2026-09-21", "price": "¥2,860（税込）", "img": "thumbs/cd/01_6396.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6396"}, {"id": "01_6397", "type": "蓮ノ空女学院スクールアイドルクラブ Extraシングル", "title": "ソレイユスマイル", "songs": ["01. ソレイユスマイル", "02. 百億年分のしあわせ", "03. ソレイユスマイル（Off Vocal）", "04. 百億年分のしあわせ（Off Vocal）"], "date": "2026年10月14日", "sortKey": "2026-10-14", "price": "¥1,430（税込）", "img": "thumbs/cd/01_6397.webp", "url": "https://www.lovelive-anime.jp/hasunosora/music/cd/?p=01_6397"}];
+
+/*========== 多语言 ==========*/
+const I18N = {
+  zh: {
+    title:'Love Live! 莲之空CD图鉴',
+    subtitle:'蓮ノ空女学院スクールアイドルクラブ CD コレクションチェッカー',
+    note:'共收录 {n} 张CD · 勾选已收藏 · 进度保存在本地浏览器 · 数据整理自莲之空官网音乐商品页（{d}）',
+    langBtn:'日本語',
+    stOverall:'总完成度',
+    stPct:'{c} / {t} 张',
+    allCat:'全部类型', allStatus:'全部状态', ownedOnly:'已收藏', unownedOnly:'未收藏',
+    searchPh:'🔍 搜索标题 / 类型 / 歌曲…',
+    sortAsc:'📅 发售时间 早→晚', sortDesc:'📅 发售时间 晚→早',
+    reset:'🗑️ 清空', resetConfirm:'确定清空所有收集进度吗？此操作不可恢复。',
+    launchLabel:'发售', priceLabel:'价格', detailLink:'官网页面',
+    songsHead:'曲目', toggleOwned:'✓ 设为已收藏', toggleUnowned:'取消已收藏',
+    checkedLabel:'已收藏',
+    empty:'没有符合条件的CD，换个筛选条件试试～',
+    cleared:'已清空收集进度',
+    footerBrand:'Love Live! 莲之空CD图鉴 · 非官方粉丝站',
+    footerNote:'数据来源：莲之空女学院スクールアイドルクラブ 官网音乐商品页（lovelive-anime.jp/hasunosora/music/cd/），价格为含税日元价格；官网未标价的记为「未公布」。',
+    footerAck:'本页面由 AI 生成整理 · 数据可能存在错误或遗漏 · 仅供个人学习参考 · 不得用于商业用途 · 版权归各权利方所有 · 侵权请联系删除',
+    footerCopy:'LoveLive! 系列版权归版权方所有 · 本项目为非官方粉丝工具',
+    pvSite:'站点访问量', pvUnit:'次', uvSite:'访客', uvUnit:'人',
+    navNui:'🧸 趴趴图鉴',
+    cat:{ single:'单曲', mini:'迷你专辑', album:'专辑', special:'SPECIAL专辑', grad:'毕业专辑', ost:'原声带', other:'其他' },
+  },
+  ja: {
+    title:'蓮ノ空 CD図鑑',
+    subtitle:'蓮ノ空女学院スクールアイドルクラブ CD コレクションチェッカー',
+    note:'収録 {n} 枚 · チェックして収集状況を記録 · 進捗はブラウザに保存 · 公式サイト音楽商品ページより整理（{d}）',
+    langBtn:'中文',
+    stOverall:'総進捗',
+    stPct:'{c} / {t} 枚',
+    allCat:'全タイプ', allStatus:'全ステータス', ownedOnly:'収集済み', unownedOnly:'未収集',
+    searchPh:'🔍 タイトル / 種別 / 楽曲検索…',
+    sortAsc:'📅 発売順 古→新', sortDesc:'📅 発売順 新→古',
+    reset:'🗑️ リセット', resetConfirm:'すべての進捗を消去しますか？元に戻せません。',
+    launchLabel:'発売', priceLabel:'価格', detailLink:'公式ページ',
+    songsHead:'収録曲', toggleOwned:'✓ 収集済みにする', toggleUnowned:'収集済みを解除',
+    checkedLabel:'収集済み',
+    empty:'該当するCDがありません。条件を変えてみてください～',
+    cleared:'進捗を消去しました',
+    footerBrand:'蓮ノ空 CD図鑑 · 非公式ファンサイト',
+    footerNote:'データ元：蓮ノ空女学院スクールアイドルクラブ 公式サイト 音楽商品ページ（lovelive-anime.jp/hasunosora/music/cd/）。価格は税込円表示、公式未掲載は「未発表」。',
+    footerAck:'本ページは AI による整理です · 誤りや欠落がある可能性があります · 個人学習用 · 商用利用禁止 · 権利は各権利者に帰属',
+    footerCopy:'ラブライブ！シリーズの著作権は各権利者に帰属します · 非公式ファンツール',
+    pvSite:'サイト訪問数', pvUnit:'回', uvSite:'訪問者', uvUnit:'人',
+    navNui:'🧸 ぬい図鑑',
+    cat:{ single:'シングル', mini:'ミニアルバム', album:'アルバム', special:'SPECIALアルバム', grad:'卒業アルバム', ost:'サウンドトラック', other:'その他' },
+  }
+};
+const LS_LANG = 'll-cd-lang';
+const LS_KEY = 'll-cd-progress-v1';
+const CAT_ORDER = ['single','mini','album','special','grad','ost','other'];
+
+/*========== 分类 ==========*/
+function catOf(type){
+  if (type.indexOf('Graduation Album') >= 0 || type.indexOf('卒業') >= 0) return 'grad';
+  if (type.indexOf('SPECIALアルバム') >= 0) return 'special';
+  if (type.indexOf('ミニアルバム') >= 0) return 'mini';
+  if (type.indexOf('サウンドトラック') >= 0) return 'ost';
+  if (type.indexOf('アルバム') >= 0) return 'album';
+  if (type.indexOf('シングル') >= 0 || type.indexOf('テーマソング') >= 0) return 'single';
+  return 'other';
+}
+CD_DATA.forEach(it => { it.cat = catOf(it.type); it.year = (it.sortKey || '').slice(0, 4); });
+
+let lang = localStorage.getItem(LS_LANG) || ((navigator.language||'').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'zh');
+if (!I18N[lang]) lang = 'zh';
+const T = k => (I18N[lang] && I18N[lang][k]) || k;
+const fill = (tpl, map) => tpl.replace(/\{(\w+)\}/g, (m, k) => (k in map ? map[k] : m));
+
+/*========== 收藏状态 ==========*/
+let state = {};
+try { state = JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch (e) { state = {}; }
+function saveState(){ try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch(e){} }
+function isChecked(id){ return !!state[id]; }
+function setChecked(id, on){ if(on) state[id] = true; else delete state[id]; saveState(); }
+
+/*========== 统计 ==========*/
+const catCount = {};
+CAT_ORDER.forEach(c => catCount[c] = 0);
+CD_DATA.forEach(it => catCount[it.cat]++);
+const $ = id => document.getElementById(id);
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function priceStr(p){ return (p === '未公布') ? (lang === 'ja' ? '未発表' : '未公布') : p; }
+
+/*========== 渲染 ==========*/
+let sortAsc = true;
+function matchItem(it){
+  const fCat = $('f-cat').value;
+  if (fCat && it.cat !== fCat) return false;
+  const fSt = $('f-status').value;
+  if (fSt === 'owned' && !isChecked(it.id)) return false;
+  if (fSt === 'unowned' && isChecked(it.id)) return false;
+  const kw = $('search').value.trim().toLowerCase();
+  if (kw) {
+    const hay = [it.title, it.type, it.price, it.date, (it.songs||[]).join(' ')].join(' ').toLowerCase();
+    if (hay.indexOf(kw) === -1) return false;
+  }
+  return true;
+}
+function cardHtml(it){
+  const checked = isChecked(it.id);
+  return `<div class="cd-card${checked ? ' checked' : ''}" data-id="${it.id}">
+    <div class="cd-card-check">✓</div>
+    <div class="cd-card-zoom" title="${esc(T('songsHead'))}" data-id="${it.id}">🔍</div>
+    <div class="cd-card-img">
+      <img src="${esc(it.img)}" alt="${esc(it.title)}" loading="lazy">
+    </div>
+    <div class="cd-card-name">${esc(it.title)}</div>
+    <div class="cd-card-type">${esc(it.type)}</div>
+    <div class="cd-card-meta"><span>${esc(it.date)}</span><span class="price">${esc(priceStr(it.price))}</span></div>
+  </div>`;
+}
+function groupHtml(year, vis){
+  const checked = vis.filter(i => isChecked(i.id)).length;
+  const total = vis.length;
+  const pct = total ? Math.round(checked / total * 100) : 0;
+  return `<div class="cd-group" data-year="${esc(year)}">
+    <div class="group-head">
+      <div class="group-title">${esc(year)}<span class="ja">${esc(T('launchLabel'))}</span></div>
+      <div class="size-badge">${total}</div>
+    </div>
+    <div class="group-grid">${vis.map(cardHtml).join('')}</div>
+    <div class="group-info">
+      <span>📅 ${T('launchLabel')}：<b>${esc(year)}</b></span>
+      <span class="group-progress"><span class="gp-text">💿 ${checked}/${total}</span><span class="bar"><i style="width:${pct}%"></i></span></span>
+    </div>
+  </div>`;
+}
+function render(){
+  const vis = CD_DATA.filter(matchItem);
+  const years = [];
+  vis.forEach(it => { if (years.indexOf(it.year) === -1) years.push(it.year); });
+  years.sort((a, b) => sortAsc ? (a < b ? -1 : 1) : (a > b ? -1 : 1));
+  $('item-list').innerHTML = years.map(y =>
+    groupHtml(y, vis.filter(it => it.year === y).sort((a, b) =>
+      sortAsc ? (a.sortKey < b.sortKey ? -1 : 1) : (a.sortKey > b.sortKey ? -1 : 1)))
+  ).join('');
+  $('empty').textContent = T('empty');
+  $('empty').style.display = years.length ? 'none' : 'block';
+}
+function updateStats(){
+  const total = CD_DATA.length;
+  let checked = 0;
+  CD_DATA.forEach(it => { if (isChecked(it.id)) checked++; });
+  const pct = total ? Math.round(checked / total * 100) : 0;
+  $('st-overall').innerHTML = pct + '<span class="small">%</span>';
+  $('st-overall-bar').style.width = pct + '%';
+  $('st-overall-pct').textContent = fill(T('stPct'), {c: checked, t: total});
+  $('fp-fill').style.width = pct + '%';
+  $('fp-text').textContent = pct + '% · ' + fill(T('stPct'), {c: checked, t: total});
+  // 分类小徽章
+  $('cat-chips').innerHTML = CAT_ORDER.filter(c => catCount[c]).map(c => {
+    const got = CD_DATA.filter(it => it.cat === c && isChecked(it.id)).length;
+    return `<span class="cat-chip">${esc(T('cat')[c])} ${got}/${catCount[c]}</span>`;
+  }).join('');
+}
+function updateGroup(grp){
+  const cards = grp.querySelectorAll('.cd-card');
+  const checked = [].filter.call(cards, c => isChecked(c.dataset.id)).length;
+  const total = cards.length;
+  const pct = total ? Math.round(checked / total * 100) : 0;
+  const txt = grp.querySelector('.gp-text');
+  if (txt) txt.textContent = '💿 ' + checked + '/' + total;
+  const bar = grp.querySelector('.bar i');
+  if (bar) bar.style.width = pct + '%';
+}
+
+/*========== 详情弹层 ==========*/
+let lbId = null;
+function openLightbox(id){
+  const it = CD_DATA.find(x => x.id === id);
+  if (!it) return;
+  lbId = id;
+  $('lb-img').src = it.img;
+  $('lb-img').alt = it.title;
+  $('lb-type').textContent = it.type;
+  $('lb-title').textContent = it.title;
+  $('lb-date').innerHTML = '📅 ' + esc(T('launchLabel')) + '：<b>' + esc(it.date) + '</b>';
+  $('lb-price').innerHTML = '💰 ' + esc(T('priceLabel')) + '：<b>' + esc(priceStr(it.price)) + '</b>';
+  $('lb-songs-head').textContent = '🎵 ' + T('songsHead');
+  $('lb-songs').textContent = (it.songs && it.songs.length) ? it.songs.join('\n') : '—';
+  const link = $('lb-link');
+  link.href = it.url || '#';
+  link.textContent = '🔗 ' + T('detailLink');
+  link.style.display = it.url ? 'inline-block' : 'none';
+  $('lb-toggle').textContent = isChecked(id) ? T('toggleUnowned') : T('toggleOwned');
+  $('lightbox').classList.add('open');
+}
+function closeLightbox(){ $('lightbox').classList.remove('open'); lbId = null; }
+function toggleFromLightbox(){
+  if (!lbId) return;
+  const on = !isChecked(lbId);
+  setChecked(lbId, on);
+  const card = document.querySelector('.cd-card[data-id="' + lbId + '"]');
+  if (card) {
+    card.classList.toggle('checked', on);
+    const grp = card.closest('.cd-group');
+    if (grp) updateGroup(grp);
+  }
+  $('lb-toggle').textContent = on ? T('toggleUnowned') : T('toggleOwned');
+  updateStats();
+}
+
+/*========== 语言应用 ==========*/
+function applyLang(){
+  document.title = T('title');
+  $('site-title').textContent = T('title');
+  $('site-sub').textContent = T('subtitle');
+  $('site-note').textContent = fill(T('note'), {n: CD_DATA.length, d: '2026-09-28'});
+  $('lang-toggle').textContent = T('langBtn');
+  $('navlink').textContent = T('navNui');
+  $('st-lbl-overall').textContent = T('stOverall');
+  $('search').placeholder = T('searchPh');
+  const sort = $('sort');
+  sort.options[0].textContent = T('sortAsc');
+  sort.options[1].textContent = T('sortDesc');
+  $('btn-reset').textContent = T('reset');
+  // 类型下拉
+  const fc = $('f-cat');
+  const prevCat = fc.value;
+  fc.innerHTML = '';
+  const ocAll = document.createElement('option'); ocAll.value = ''; ocAll.textContent = T('allCat'); fc.appendChild(ocAll);
+  CAT_ORDER.filter(c => catCount[c]).forEach(c => {
+    const o = document.createElement('option');
+    o.value = c;
+    o.textContent = T('cat')[c] + '（' + catCount[c] + '）';
+    fc.appendChild(o);
+  });
+  if (prevCat && catCount[prevCat]) fc.value = prevCat; else fc.value = '';
+  // 状态下拉
+  const fs = $('f-status');
+  const prevSt = fs.value;
+  fs.innerHTML = '';
+  [['', T('allStatus')], ['owned', T('ownedOnly')], ['unowned', T('unownedOnly')]].forEach(([v, t]) => {
+    const o = document.createElement('option'); o.value = v; o.textContent = t; fs.appendChild(o);
+  });
+  if (prevSt) fs.value = prevSt;
+  $('footer-brand').textContent = T('footerBrand');
+  $('footer-note').textContent = T('footerNote');
+  $('footer-ack').textContent = T('footerAck');
+  $('footer-copy').textContent = T('footerCopy');
+  $('f-stat-pv').textContent = T('pvSite');
+  $('f-stat-pv-unit').textContent = T('pvUnit');
+  $('f-stat-uv').textContent = T('uvSite');
+  $('f-stat-uv-unit').textContent = T('uvUnit');
+  render();
+  updateStats();
+}
+
+/*========== 事件 ==========*/
+const FP_THRESHOLD = 220;
+window.addEventListener('scroll', () => {
+  $('float-progress').classList.toggle('show', window.scrollY > FP_THRESHOLD);
+}, { passive: true });
+$('lang-toggle').addEventListener('click', () => {
+  lang = lang === 'zh' ? 'ja' : 'zh';
+  localStorage.setItem(LS_LANG, lang);
+  applyLang();
+});
+$('search').addEventListener('input', render);
+$('f-cat').addEventListener('change', render);
+$('f-status').addEventListener('change', render);
+$('sort').addEventListener('change', e => { sortAsc = e.target.value !== 'desc'; render(); });
+$('item-list').addEventListener('click', e => {
+  // 🔍 按钮 → 详情弹层
+  const zoom = e.target.closest('.cd-card-zoom');
+  if (zoom) { openLightbox(zoom.dataset.id); return; }
+  // 点击卡片任意处 → 勾选
+  const card = e.target.closest('.cd-card');
+  if (!card) return;
+  const id = card.dataset.id;
+  const on = !isChecked(id);
+  setChecked(id, on);
+  card.classList.toggle('checked', on);
+  const grp = card.closest('.cd-group');
+  if (grp) updateGroup(grp);
+  updateStats();
+});
+$('lb-close').addEventListener('click', closeLightbox);
+$('lightbox').addEventListener('click', e => { if (e.target === $('lightbox')) closeLightbox(); });
+$('lb-toggle').addEventListener('click', toggleFromLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+$('btn-reset').addEventListener('click', () => {
+  if (!confirm(T('resetConfirm'))) return;
+  state = {};
+  saveState();
+  render();
+  updateStats();
+  toast(T('cleared'));
+});
+let toastTimer;
+function toast(msg){
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+/*========== 启动 ==========*/
+applyLang();
+$('float-progress').classList.toggle('show', window.scrollY > FP_THRESHOLD);
+</script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+</html>
